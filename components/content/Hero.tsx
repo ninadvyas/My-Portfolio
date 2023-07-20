@@ -11,7 +11,7 @@ const Hero = () => {
          Hey I'm Ninad
         </h1>
         <h1 className='font-bold text-3xl lg:text-5xl text-center lg:text-start tracking-tight mb-3 text-white mx-auto lg:mx-0'>
-         I'm a Software Devloper
+         I'm a Software Engineer
         </h1>
 
         <p className='w-full mt-2 text-base text-center lg:text-start mb-5 lg:mb-0 text-gray-400 mx-auto lg:mx-0'>
