@@ -14,9 +14,9 @@ const AboutMe = () => {
         technologies as well as experience in database management. 
         <a
           href="#contact"
-          className=" hover:text-white ease delay-100 text-blue-500 "
+          className="  ease delay-100 text-white hover:text-blue-500  "
         >
-          <u>Reach Out</u>
+          <u className='no-underline'> Reach Out</u>
         </a>{' '}
         to me if you ever want to
         bounce ideas off of me or even just have a chat about technologies and
