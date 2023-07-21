@@ -19,10 +19,12 @@ html,body {
 .anchor1 {
   display: inline;
   text-decoration: none;
+
   background: linear-gradient(to bottom, #f3212f 20%, #ff6b08 50%, #ffffff 90%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  
+border-radius: 5px;
+  width:8rem;
 }
 .anchor1:hover {
 
@@ -54,10 +56,10 @@ html,body {
 .sectionp .prlink {
   display: flex;
   gap: 1rem;
-  font-size: 19px;
+  font-size: 17px;
   font-variation-settings: 'wght' 550;
   border-radius: 3%;
-  width: 185px;
+  width: 255px;
   text-align: center;
   flex-direction: row;
 }
