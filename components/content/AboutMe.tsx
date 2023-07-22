@@ -3,6 +3,7 @@ import AnimationContainer from '../utils/AnimationContainer';
 const AboutMe = () => {
   return (
     <AnimationContainer customClassName="w-auto">
+      
       <h2 className="font-bold text-2xl mt-5 tracking-tight mb-8 text-white text-center lg:text-start ">
         About me
       </h2>
