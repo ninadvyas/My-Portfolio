@@ -16,8 +16,7 @@ const AboutSection = () => {
             tools and technologies as well as experience in database management.
             In my coursework, I have gained experience in designing and
             implementing software solutions, as well as troubleshooting and
-            debugging complex systems. My passion lies in solving problems,
-            designing systems, and communicating complex ideas.
+            debugging complex systems. 
           </p>
 
           <p className="text-base text-gray-400">
