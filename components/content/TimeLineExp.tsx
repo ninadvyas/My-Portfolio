@@ -14,6 +14,7 @@ export const Timeline = ({ children }: { children: React.ReactNode }) => {
   );
 };
 
+
 export const TimelineEvent = ({
   active,
   children,
