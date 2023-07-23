@@ -7,6 +7,7 @@ const ContactMe = () => {
         className="font-bold text-2xl md:text-2xl tracking-tight mb-8 text-white text-center lg:text-start"
         id="contact"
       >
+        
         Contact me
       </h2>
 
