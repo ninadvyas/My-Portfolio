@@ -18,6 +18,7 @@ const CurrentTimeLineExp = () => {
           | mar. 2023 - Currently
         </TimelineEvent.Title>
 
+
         <TimelineEvent.Description>
           Frontend development and maintenance of projects implementing agile
           methodologies (Kanban in Jira) and best practices such as SOLID
