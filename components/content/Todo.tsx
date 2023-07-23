@@ -36,41 +36,33 @@ const myWorkProcess = [
     title: 'Photography',
     des: 'Passionate photographer skilled in capturing extraordinary moments through diverse genres, including landscape, portrait, and documentary photography. ',
     delay: 0.8
-  },
+  }
 ];
 
 const Todo = () => {
   return (
-    <AnimationContainer customClassName='w-full mb-4'>
-
-      <h2 className='font-bold text-2xl md:text-xl tracking-tight mb-12 mt-5 text-blue-500 text-start'>
-        Work <p className='text-3xl text-white'>What I Do</p>
+    <AnimationContainer customClassName="w-full mb-4">
+      <h2 className="font-bold text-2xl md:text-xl tracking-tight mb-12 mt-5 text-blue-500 text-start">
+        Work <p className="text-3xl text-white">What I Do</p>
       </h2>
 
-      <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8 mx-auto'>
-        {
-          myWorkProcess.map(({ id, title, des, delay }) => (
-            <AnimationContainer
-              key={id}
-              customClassName=' hover:bg-zinc-900 hover:cursor-pointer rounded border border-gray-800 hover:borderW-gray-900 bg-gray-900 p-4 shadow-sm hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] sm:p-6 transition ease'
-              customDelay={delay}
-            >
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8 mx-auto">
+        {myWorkProcess.map(({ id, title, des, delay }) => (
+          <AnimationContainer
+            key={id}
+            customClassName=" hover:bg-zinc-900 hover:cursor-pointer rounded border border-gray-800 hover:borderW-gray-900 bg-gray-900 p-4 shadow-sm hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] sm:p-6 transition ease"
+            customDelay={delay}
+          >
+            <h3 className="font-bold text-2xl  tracking-tight text-green-500 text-center">
+              {title}
+            </h3>
 
-              <h3 className='font-bold text-2xl  tracking-tight text-green-500 text-center'>
-                {title}
-              </h3>
-
-              <p className='mt-2 text-base text-gray-400 text-center'>
-                {des}
-              </p>
-
-            </AnimationContainer>
-          ))
-        }
+            <p className="mt-2 text-base text-gray-400 text-center">{des}</p>
+          </AnimationContainer>
+        ))}
       </div>
-
     </AnimationContainer>
-  )
-}
+  );
+};
 
 export default Todo;
