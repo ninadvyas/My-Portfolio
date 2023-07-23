@@ -383,3 +383,9 @@ table {
       );
   }
 }
+
+@media (max-width: 600px) {
+  .testimonials-container {
+    grid-template-columns: auto;
+  }
+}
