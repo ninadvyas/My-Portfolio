@@ -73,6 +73,7 @@ src='https://drscdn.500px.org/photo/1071077537/m%3D900/v2?sig=7a00ac19d21adf1d4b
       height={340}
       alt=""
     />
+    
   </Card>
   <Card>
     <Card.Header css={{ position: "absolute", zIndex: 1, top: 5 }}>
