@@ -20,17 +20,16 @@ html,body {
   display: inline;
   text-decoration: none;
 
-  background: linear-gradient(to bottom, #f3212f 20%, #ff6b08 50%, #ffffff 90%);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+  color:white;
 border-radius: 5px;
   width:8rem;
+
 }
 .anchor1:hover {
 
-  background: linear-gradient(to top, #f3212f 20%, #ff6b08 50%, #ffffff 90%);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+
+
+ color:#068FFF;
 }
 .sectionp {
   width: 19.5rem;
