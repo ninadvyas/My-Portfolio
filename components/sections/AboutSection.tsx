@@ -19,6 +19,7 @@ const AboutSection = () => {
             debugging complex systems. 
           </p>
 
+
           <p className="text-base text-gray-400">
             I always look forward to exceeding expectations and I am effective
             both working as an individual and as part of a team. I write
