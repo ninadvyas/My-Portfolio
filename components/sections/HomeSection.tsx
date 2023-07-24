@@ -3,7 +3,7 @@ import AboutMe from '../content/AboutMe';
 import CurrentFavTech from '../content/CurrentFavTech';
 // import CurrentLearning from '../content/CurrentLearning';
 import Todo from '../content/Todo';
-
+import Experinced from '../content/Experinced'
 
 import Hero from '../content/Hero';
 
@@ -21,7 +21,7 @@ const HomeSection = () => {
       <div className='w-full flex flex-col items-start'>
 
         <AboutMe />
-
+<Experinced/>
 
 
 <Todo/>
