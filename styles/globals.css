@@ -12,7 +12,15 @@ html,body {
   scroll-behavior: smooth;
 }
 
+/* frames */
+.photo1 {
+  background-image: url(./photos/1.jpeg);
+  width: 20rem;
+  height: 196px;
+  border-radius: 5px;
+  object-fit: cover;
 
+}
 /* project page css */
 
 
@@ -386,5 +394,23 @@ table {
 @media (max-width: 600px) {
   .testimonials-container {
     grid-template-columns: auto;
+  }
+  .sectionp span {
+    font-variation-settings: 'wght' 850;
+  }
+  .sectionp .prtitle {
+    font-variation-settings: 'wght' 750;
+  }
+  
+  .sectionp .prlink {
+
+    font-variation-settings: 'wght' 550;
+
+  
+
+  }
+  .sectionp .prspan {
+
+    font-variation-settings: 'wght' 450;
   }
 }
