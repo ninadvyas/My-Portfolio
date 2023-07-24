@@ -9,9 +9,7 @@ const AboutMe = () => {
       </h2>
 
       <p className="text-base text-gray-400">
-        Hello I'm Ninad! I'm software developer & designer with a passion for
-        building things that are user-friendly , innovative and problem
-        solving.I am familiar with various software development tools and
+        Hello I'm Ninad! I'm software developer & designer.I am familiar with various software development tools and
         technologies as well as experience in database management. 
         <a
           href="#contact"
