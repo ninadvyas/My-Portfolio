@@ -16,6 +16,11 @@ const LinksMenu = [
     path: '/projects',
     delay: '200ms'
   },
+  {
+    name: 'Frames',
+    path: '/frames',
+    delay: '225ms'
+  },
   // {
   //   name: 'Blog',
   //   path: '/blog',
