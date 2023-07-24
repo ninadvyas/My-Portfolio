@@ -20,7 +20,13 @@ export const navItemsSelected: { [key: string]: NavItemHeaderAnimation } = {
     name: 'projects',
     x: 127,
     y: -3,
-    w: '70px',
+    w: '73px',
+  },
+  '/frames': {
+    name: 'frames',
+    x: 203,
+    y: -3,
+    w: '68px',
   },
   // '/blog': {
   //   name: 'blog',
