@@ -42,7 +42,7 @@ const myWorkProcess = [
 const Todo = () => {
   return (
     <AnimationContainer customClassName="w-full ">
-      <h2 className="font-bold text-2xl md:text-xl tracking-tight mb-10 mt-5 text-blue-500 text-start">
+      <h2 className="font-bold text-2xl md:text-xl tracking-tight mb-10 mt-5 text-red-500 text-start">
         Work <p className="text-3xl text-white">What I Do</p>
       </h2>
 
