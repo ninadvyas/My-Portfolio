@@ -35,7 +35,7 @@ export const navItemsSelected: { [key: string]: NavItemHeaderAnimation } = {
   //   w: '45px',
   // }
 };
-
+ 
 const LinksNav = () => {
 
   let pathname = usePathname() as string;
