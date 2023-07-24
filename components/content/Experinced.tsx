@@ -19,7 +19,7 @@ const CurrentTimeLineExp = () => {
 
       <TimelineEvent last>
 
-        <TimelineEvent.Title>Web Development | 3+ Years Practical</TimelineEvent.Title>
+        <TimelineEvent.Title>Web Development | 2+ Years Practical</TimelineEvent.Title>
 
         <TimelineEvent.Description>
         Experienced web developer with a track record of creating dynamic and intuitive websites. Passionate about transforming ideas into functional and visually appealing online experiences.
