@@ -392,18 +392,15 @@ table {
   .sectionp span {
     font-variation-settings: 'wght' 850;
   }
-  .sectionp .prtitle {
+.prtitle {
     font-variation-settings: 'wght' 750;
   }
   
-  .sectionp .prlink {
-
+.prlink {
     font-variation-settings: 'wght' 550;
 
-  
-
   }
-  .sectionp .prspan {
+.prspan {
 
     font-variation-settings: 'wght' 450;
   }
