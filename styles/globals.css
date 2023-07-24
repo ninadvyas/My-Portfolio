@@ -13,14 +13,7 @@ html,body {
 }
 
 /* frames */
-.photo1 {
-  background-image: url(./photos/1.jpeg);
-  width: 20rem;
-  height: 196px;
-  border-radius: 5px;
-  object-fit: cover;
 
-}
 /* project page css */
 
 
