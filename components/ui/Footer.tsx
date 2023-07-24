@@ -62,7 +62,7 @@ const Footer = () => {
             Home
           </Link>
           <Link
-            href='/blog'
+            href='#'
             className='flex items-center gap-2 text-gray-500 hover:text-gray-600 transition ease'
           >
             <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='currentColor' className='w-5 h-5'>
