@@ -70,6 +70,7 @@ const Footer = () => {
             </svg>
             Blog
           </Link> */}
+          
           <Link
             href='/frames'
             className='flex items-center gap-2 text-gray-500 hover:text-gray-600 transition ease'
