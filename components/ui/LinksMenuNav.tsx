@@ -21,6 +21,11 @@ const LinksMenu = [
     path: '/frames',
     delay: '225ms'
   },
+  {
+    name: 'Blogs',
+    path: 'https://blogbyninad.vercel.app',
+    delay: '250ms'
+  },
   // {
   //   name: 'Blog',
   //   path: '/blog',
@@ -38,12 +43,16 @@ const LinksMenuNav = () => {
             key={name}
             className='border-gray-700 text-gray-100 text-sm font-semibold'
             style={{ transitionDelay: delay }}>
-            <Link href={path} className='pb-4'>
+            <Link href={path} className='pb-4' >
               {name}
             </Link>
           </li>
+          
         ))
       }
+     {/* <Link href='https://blogbyninad.vercel.app'   target='_blank' rel='noreferrer' className='text-center ml-[9rem]'>
+              <strong className='text-neutral-500 hover:text-blue-500 cursor-pointer text-lg mt-2  font-normal font-san'>blogs</strong>
+            </Link> */}
     </>
   )
 }
