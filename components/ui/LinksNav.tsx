@@ -28,6 +28,7 @@ export const navItemsSelected: { [key: string]: NavItemHeaderAnimation } = {
     y: -3,
     w: '68px',
   },
+ 
   // '/blog': {
   //   name: 'blog',
   //   x: 203,
@@ -40,7 +41,7 @@ const LinksNav = () => {
 
   let pathname = usePathname() as string;
   return (
-    <>
+    <div className='flex'>
       {
         Object.entries(navItemsSelected).map(([path, { name }]) => {
 
@@ -63,8 +64,14 @@ const LinksNav = () => {
             </Link>
           )
         })
+        
       }
-    </>
+
+            <Link href='https://blogbyninad.vercel.app'  target='_blank' rel='noreferrer' className='text-center min-[320px]: max-[1020px]:hidden'>
+              <strong className='text-neutral-500 hover:text-blue-500 cursor-pointer text-lg mt-2 ml-2 font-normal font-san'>blogs</strong>
+            </Link>
+    
+    </div>
   )
 }
 
