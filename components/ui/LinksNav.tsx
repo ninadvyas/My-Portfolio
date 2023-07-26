@@ -67,9 +67,9 @@ const LinksNav = () => {
         
       }
 
-            <Link href='https://blogbyninad.vercel.app'  target='_blank' rel='noreferrer' className='text-center min-[320px]: max-[1020px]:hidden'>
+            {/* <Link href='https://blogbyninad.vercel.app'  target='_blank' rel='noreferrer' className='text-center min-[320px]: max-[1020px]:hidden'>
               <strong className='text-neutral-500 hover:text-blue-500 cursor-pointer text-lg mt-2 ml-2 font-normal font-san'>blogs</strong>
-            </Link>
+            </Link> */}
     
     </div>
   )

@@ -21,11 +21,11 @@ const LinksMenu = [
     path: '/frames',
     delay: '225ms'
   },
-  {
-    name: 'Blogs',
-    path: 'https://blogbyninad.vercel.app',
-    delay: '250ms'
-  },
+  // {
+  //   name: 'Blogs',
+  //   path: 'https://blogbyninad.vercel.app',
+  //   delay: '250ms'
+  // },
   // {
   //   name: 'Blog',
   //   path: '/blog',
