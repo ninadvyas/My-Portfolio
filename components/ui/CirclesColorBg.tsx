@@ -10,6 +10,7 @@ const animation = {
   },
 };
 
+
 const CirclesColorBg = () => {
   return (
     <motion.div
