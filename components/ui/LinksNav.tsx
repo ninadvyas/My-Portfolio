@@ -5,28 +5,28 @@ import { NavItemHeaderAnimation } from '@/types';
 
 export const navItemsSelected: { [key: string]: NavItemHeaderAnimation } = {
   '/': {
-    name: 'home',
+    name: 'HOME',
     x: 1,
     y: -3,
-    w: '60px',
+    w: '66px',
   },
   '/about': {
-    name: 'about',
-    x: 65,
+    name: 'ABOUT',
+    x: 71,
     y: -3,
-    w: '60px',
+    w: '65px',
   },
   '/projects': {
-    name: 'projects',
-    x: 127,
+    name: 'PROJECTS',
+    x: 145,
     y: -3,
-    w: '73px',
+    w: '96px',
   },
   '/frames': {
-    name: 'frames',
-    x: 203,
+    name: 'FRAMES',
+    x: 244,
     y: -3,
-    w: '68px',
+    w: '79px',
   },
  
   // '/blog': {
