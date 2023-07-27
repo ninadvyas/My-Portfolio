@@ -45,6 +45,7 @@ const LinksNav = () => {
       {
         Object.entries(navItemsSelected).map(([path, { name }]) => {
 
+          
           const isActive = path === pathname;
 
           return (
