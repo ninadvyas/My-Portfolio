@@ -12,7 +12,7 @@ const Header = () => {
         <div >
           <h1>
             <Link href='/'>
-              <strong className='hover:text-green-500 '>Ninad</strong>
+              <strong className='hover:text-blue-500 text-xl'>NINAD</strong>
             </Link>
           </h1>
           {/* <h1 className=' rounded-md text-center '>
