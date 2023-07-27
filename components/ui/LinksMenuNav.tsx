@@ -34,6 +34,7 @@ const LinksMenu = [
 ]
 
 
+
 const LinksMenuNav = () => {
   return (
     <>
@@ -41,7 +42,7 @@ const LinksMenuNav = () => {
         LinksMenu.map(({ name, path, delay }) => (
           <li
             key={name}
-            className='border-gray-700 text-gray-100 text-xs font-semibold'
+            className='border-b-2 text-gray-100 text-left text-md hover:text-red-500 font-semibold'
             style={{ transitionDelay: delay }}>
             <Link href={path} className='pb-4' >
               {name}
