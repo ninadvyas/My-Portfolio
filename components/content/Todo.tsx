@@ -42,10 +42,10 @@ const myWorkProcess = [
 const Todo = () => {
   return (
     <AnimationContainer customClassName="w-full ">
-      <h2 className="font-bold text-2xl md:text-xl tracking-tight mb-10 mt-5 text-red-500 text-start">
-        Work <p className="text-3xl text-white">What I Do</p>
+      <h2 className="font-bold text-3xl md:text-3xl tracking-tight mb-5 mt-5 text-white text-center">
+        What I'm Doing
       </h2>
-
+    <hr className='mb-6'/>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8 mx-auto">
         {myWorkProcess.map(({ id, title, des, delay }) => (
           <AnimationContainer
@@ -53,7 +53,7 @@ const Todo = () => {
             customClassName=" hover:bg-zinc-900 hover:text-white  rounded border border-gray-800 hover:borderW-gray-900 bg-gray-900 p-4 shadow-sm hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] sm:p-6 transition ease"
             customDelay={delay}
           >
-            <h3 className="font-bold text-2xl  tracking-tight text-green-500 text-center">
+            <h3 className="font-bold text-2xl  tracking-tight text-slate-300 text-center">
               {title}
             </h3>
 
