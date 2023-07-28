@@ -4,7 +4,7 @@ const AboutMe = () => {
   return (
     <AnimationContainer customClassName="w-auto">
       
-      <h2 className="font-bold text-2xl mt-5 tracking-tight mb-5 text-white text-center lg:text-start">
+      <h2 className="font-bold text-3xl mt-5 tracking-tight mb-5 text-white text-center lg:text-start">
         About me
       </h2>
 

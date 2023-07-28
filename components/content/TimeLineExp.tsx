@@ -5,7 +5,7 @@ import { TimelineEventProps } from '@/types';
 export const Timeline = ({ children }: { children: React.ReactNode }) => {
   return (
     <AnimationContainer customClassName="w-full mb-16">
-      <h2 className="font-bold text-2xl tracking-tight mb-8 mt-8 text-white text-center lg:text-start">
+      <h2 className="font-bold text-3xl tracking-tight mb-8 mt-8 text-white text-center lg:text-start">
         Experience
       </h2>
 

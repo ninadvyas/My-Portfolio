@@ -45,7 +45,7 @@ const Todo = () => {
       <h2 className="font-bold text-3xl md:text-3xl tracking-tight mb-5 mt-5 text-white text-center">
         What I'm Doing
       </h2>
-    <hr className='mb-6'/>
+    <hr className='mb-6 border border-neutral-700'/>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8 mx-auto">
         {myWorkProcess.map(({ id, title, des, delay }) => (
           <AnimationContainer
