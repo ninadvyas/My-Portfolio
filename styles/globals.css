@@ -7,10 +7,115 @@
   color: #000000;
 }
 
+.link {
+  height: 30px;
+  align-items: center;
+  color: #000;
+  text-decoration: none;
+  display: flex;
+}
+
+/* Hide extra text */
+.mask {
+  position: relative;
+  padding: 0;
+  height: 20px;
+  /*  Remove overflow to see how it works　:) */
+  overflow: hidden;
+}
+
+.link-container {
+  transition: transform 0.4s ease;
+}
+
+.title0 {
+  display: block;
+  color:#068FFF;
+  font-weight: 900;
+  /*  Set same font-size and line height  */
+  font-size: 20px;
+  line-height: 20px;
+  margin-left:5rem;
+  transition: transform 0.4s ease;
+}
+
+.link-title1 {
+  transform-origin: right center;
+}
+
+.link-title2 {
+  transform-origin: left center;
+  transform: rotate(20deg);
+}
+
+.link-icon {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: #068FFF;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+
+  /*  Remove overflow to see how it works　:) */
+  overflow: hidden;
+}
+
+.icon {
+  display: block;
+  position: absolute;
+  transition: transform 0.4s ease;
+  width:32px;
+  margin-left:2px;
+  height: 30px;
+
+
+}
+
+.icon:nth-child(2) {
+  transform: translate(-40px);
+  background:white;
+}
+
+/* Hover Action*/
+
+/* Move up two texts (20px = font-size) */
+.link:hover .link-container {
+  transform: translateY(-20px);
+
+}
+
+/* Rotate texts a little bit */
+.link:hover .link-title1 {
+  transform: rotate(20deg);
+
+
+}
+
+.link:hover .link-title2 {
+  transform: rotate(0);
+  color: white;
+
+  
+}
+
+/* Move arrows to right */
+.link:hover .icon:first-child {
+  transform: translate(40px);
+}
+
+.link:hover .icon:nth-child(2) {
+  transform: translate(0px);
+}
+
+
 html,body {
   min-width: 360px;
   scroll-behavior: smooth;
 }
+/* blogbutton */
 
 /* frames */
 
@@ -76,56 +181,96 @@ border-radius: 5px;
   color: #ffffff;
 
 }
+.bg-green-box,
+.bg-white-box,
+.bg-yellow-box,
+.bg-blue-box {
+  position: relative;
+}
+.bg-green-box::after,
+.bg-white-box::after,
+.bg-yellow-box::after,
+.bg-blue-box::after {
+  position: absolute;
+  top: -1px;
+  bottom: -3px;
+  left: -3px;
+  right: -3px;
+  content: "";
+  z-index: -1;
+  border-radius: 45px;
+}
+
+.bg-green-box::after {
+  background: linear-gradient(71deg, #0d1212, #3da077, #0d1212);
+}
+
+.bg-white-box::after {
+  background: linear-gradient(71deg, #121013, #b0afb0, #121013);
+}
+
+.bg-yellow-box::after {
+  background: linear-gradient(71deg, #110e0e, #afa220, #110e0e);
+}
+
+.bg-blue-box::after {
+  background: linear-gradient(71deg, #0c0a0e, #5f6fad, #0c0a0e);
+}
+
 .recommendations-container,
 .testimonials-container {
   display: grid;
   grid-template-columns: auto auto;
   column-gap: 20px;
   row-gap: 20px;
+
+  align-item:center;
+  justify-content:center;
 }
 .recommendation-item,
 .testimonial-item1 {
   text-align: center;
-  background-image: url(4.jpg);
+  background: linear-gradient(71deg, #080509, #1a171c, #080509);
   padding: 20px;
-  width: 350px;
+  width: 380px;
   height: 200px;
   color: #d3d3d3;
-  border-radius: 5px;
-  border-bottom: 1px solid #6d6d6d4d;
+  border-radius: 35px;
+    border-bottom: 2px solid transparent;
+    
 }
 .recommendation-item,
 .testimonial-item2 {
   text-align: center;
-  background-image: url(3.jpg);
+  background: linear-gradient(71deg, #080509, #1a171c, #080509);
   padding: 20px;
-  width: 350px;
+  width: 380px;
   height: 200px;
   color: #d3d3d3;
-  border-radius: 5px;
-  border-bottom: 1px solid #6d6d6d4d;
+  border-radius: 35px;
+  border-bottom: 2px solid transparent;
 }
 .recommendation-item,
 .testimonial-item3 {
   text-align: center;
-  background-image: url(2.jpg);
+  background: linear-gradient(71deg, #080509, #1a171c, #080509);
   padding: 20px;
-  width: 350px;
+  width: 380px;
   height: 200px;
   color: #d3d3d3;
-  border-radius: 5px;
-  border-bottom: 1px solid #6d6d6d4d;
+  border-radius: 35px;
+  border-bottom: 2px solid transparent;
 }
 .recommendation-item,
 .testimonial-item4 {
   text-align: center;
-  background-image: url(1.jpg);
+  background: linear-gradient(71deg, #080509, #1a171c, #080509);
   padding: 20px;
-  width: 350px;
+  width: 380px;
   height: 200px;
   color: #d3d3d3;
-  border-radius: 5px;
-  border-bottom: 1px solid #6d6d6d4d;
+  border-radius: 35px;
+  border-bottom: 2px solid transparent;
 }
 .testimonial-item4:hover {
 }
@@ -369,6 +514,7 @@ table {
 }
 
 @media (min-width: 900px) {
+  
   .darkBackgroundCirclesColors {
     background: radial-gradient(
         circle at 15% 55%,
@@ -383,9 +529,15 @@ table {
         rgba(128, 128, 128, 0) 25%
       );
   }
+ 
 }
 
 @media (max-width: 600px) {
+ 
+  .title0{
+    margin-left:0.5rem;
+
+  }
   .testimonials-container {
     grid-template-columns: auto;
   }
