@@ -125,27 +125,24 @@ html,body {
 .anchor1 {
   display: inline;
   text-decoration: none;
-
-  color:white;
+  color: #d3d3d3;
 border-radius: 5px;
   width:8rem;
 
   
 }
 .anchor1:hover {
-
-
-
  color:#068FFF;
 }
 .sectionp {
-  width: 19.5rem;
-  height: 10rem;
-  color: white;
-  text-align: left;
-  margin-left: 1rem;
-  gap: 2rem;
-  padding-top:1rem;
+  text-align: center;
+  padding: 20px;
+  width: 340px;
+  height: 160px;
+  color: #d3d3d3;
+  border-radius: 35px;
+    border-bottom: 2px solid transparent;  
+    margin-bottom:2rem;
   
 }
 
@@ -163,11 +160,12 @@ border-radius: 5px;
   display: flex;
   gap: 1rem;
   font-size: 17px;
-  font-variation-settings: 'wght' 550;
+  font-variation-settings: 'wght' 750;
   border-radius: 3%;
   width: 255px;
-  text-align: center;
+  margin-left:5rem;
   flex-direction: row;
+  margin-top: 0.5rem;
 }
 .sectionp .prspan {
   font-size: 1rem;
@@ -194,8 +192,8 @@ border-radius: 5px;
   position: absolute;
   top: -1px;
   bottom: -3px;
-  left: -3px;
-  right: -3px;
+  left: -1px;
+  right: -1.5px;
   content: "";
   z-index: -1;
   border-radius: 45px;
@@ -236,9 +234,9 @@ border-radius: 5px;
   height: 200px;
   color: #d3d3d3;
   border-radius: 35px;
-    border-bottom: 2px solid transparent;
-    
+    border-bottom: 2px solid transparent;    
 }
+
 .recommendation-item,
 .testimonial-item2 {
   text-align: center;
