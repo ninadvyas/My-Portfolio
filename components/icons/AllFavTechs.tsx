@@ -13,17 +13,18 @@ const animation = {
 const AllFavTechs = () => {
   return (
     <>
-      <motion.p
-        className="text-base text-center lg:text-start mb-2.5 text-white mt-5"
-        initial={animation.hide}
-        animate={animation.show}
-        transition={{ delay: 0.6 }}
-      >
-        Tech Stack & Tools:
-      </motion.p>
-
+      <div>
+        <motion.p
+          className=" text-center text-lg font-bold	 lg:text-start mb-2.5 text-white mt-5"
+          initial={animation.hide}
+          animate={animation.show}
+          transition={{ delay: 0.6 }}
+        >
+          Tech Stack & Tools:
+        </motion.p>
+      </div>
       <motion.ul
-        className="flex justify-center items-center flex-wrap gap-3.5 text-gray-400 mx-auto"
+        className="flex justify-center items-center flex-wrap gap-3.5 text-gray-400 mx-auto "
         initial="hide"
         animate="show"
         transition={{ delayChildren: 0.6, staggerChildren: 0.025 }}
@@ -32,7 +33,7 @@ const AllFavTechs = () => {
           style={{ opacity: 1, transform: 'none' }}
           variants={animation}
         >
-          <div className="transition duration-200 hover:text-[#3178C6]">
+          <div className="transition duration-200 hover:text-[#3178C6] flex">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-7 w-6"
@@ -197,7 +198,56 @@ const AllFavTechs = () => {
             </svg>
           </div>
         </motion.li>
+        <motion.p
+          className="text-base text-center lg:text-start  text-white "
+          initial={animation.hide}
+          animate={animation.show}
+          transition={{ delay: 0.6 }}
+        >
+          <a href="https://dev.to/ninadvyas" className="link" rel="noopener noreferrer"
+            target="_blank">
+            <span className="mask">
+              <div className="link-container">
+                <span className="link-title1 title0">Latest Posts!</span>
+                <span className="link-title2 title0">Latest Posts!</span>
+              </div>
+            </span>
+            <div className="link-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                id="right-arrow"
+              >
+                <g data-name="Layer 2">
+                  <g data-name="arrowhead-right">
+                    <path d="m18.78 11.37-4.78-6a1 1 0 0 0-1.41-.15 1 1 0 0 0-.15 1.41L16.71 12l-4.48 5.37a1 1 0 0 0 .13 1.41A1 1 0 0 0 13 19a1 1 0 0 0 .77-.36l5-6a1 1 0 0 0 .01-1.27z"></path>
+                    <path d="M7 5.37a1 1 0 0 0-1.61 1.26L9.71 12l-4.48 5.36a1 1 0 0 0 .13 1.41A1 1 0 0 0 6 19a1 1 0 0 0 .77-.36l5-6a1 1 0 0 0 0-1.27z"></path>
+                  </g>
+                </g>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                id="right-arrow"
+              >
+                <g data-name="Layer 2">
+                  <g data-name="arrowhead-right">
+                    <path d="m18.78 11.37-4.78-6a1 1 0 0 0-1.41-.15 1 1 0 0 0-.15 1.41L16.71 12l-4.48 5.37a1 1 0 0 0 .13 1.41A1 1 0 0 0 13 19a1 1 0 0 0 .77-.36l5-6a1 1 0 0 0 .01-1.27z"></path>
+                    <path d="M7 5.37a1 1 0 0 0-1.61 1.26L9.71 12l-4.48 5.36a1 1 0 0 0 .13 1.41A1 1 0 0 0 6 19a1 1 0 0 0 .77-.36l5-6a1 1 0 0 0 0-1.27z"></path>
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </a>
+        </motion.p>
       </motion.ul>
+      
     </>
   );
 };
