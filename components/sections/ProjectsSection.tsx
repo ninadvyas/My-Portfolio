@@ -5,6 +5,7 @@ import TitleSectionPageContainer from '../utils/TitleSectionPageContainer';
 import Project from '../content/Projectcard';
 
 
+
 const ProjectsSection = () => {
   return (
     <SectionContainer>
@@ -20,7 +21,7 @@ const ProjectsSection = () => {
             These are most of the projects I've done since I started programming, some of them are personal projects, practice or for other situation.  All of my projects go to my <a href='https://github.com/NinadVyas' target='_blank' rel='noopener noreferrer' className='hover:text-white hover:underline transition-all ease'>github.com/NinadVyas</a>.
           </p>
           <div className="testimonials-container">
-        <div className="testimonial-item4">
+        <div className="testimonial-item4 bg-green-box">
 
 <div className='sectionp'>
   <header className='prtitle'>Crypto Base</header>
@@ -33,7 +34,7 @@ const ProjectsSection = () => {
 </div>
 
 
-<div className="testimonial-item3">
+<div className="testimonial-item3 bg-white-box">
 <div className='sectionp'>
   <header className='prtitle'>Room Realm </header>
   <header className='prspan'>A chat room where everybody can talk about anything!</header>
@@ -45,7 +46,7 @@ const ProjectsSection = () => {
 </div>
 
 
-<div className="testimonial-item2">
+<div className="testimonial-item2 bg-yellow-box">
 <div className='sectionp'>
   <header className='prtitle'>College Space</header>
   <header className='prspan'>A platform that provides docs and projects to learn</header>
@@ -57,7 +58,7 @@ const ProjectsSection = () => {
 </div>
 
 
-<div className="testimonial-item1">
+<div className="testimonial-item1 bg-blue-box">
 <div className='sectionp'>
   <header className='prtitle'>Quiz Web</header>
   <header className='prspan'>A Web App in which user can take quiz and see result instantly</header>
@@ -75,11 +76,15 @@ const ProjectsSection = () => {
   <a className='text-white hover:text-blue-500' href='https://github.com/NinadVyas'> <p className='btmmore'>More on Github ↗</p> </a>
 </div>
 
+
+
         </AnimationContainer>
 
 
 
       </div>
+ 
+
 
     </SectionContainer>
   )
