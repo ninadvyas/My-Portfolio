@@ -128,14 +128,20 @@ html,body {
   color: #d3d3d3;
 border-radius: 5px;
   width:8rem;
+  margin-left:78px;
+  font-size:1.5rem;
+  margin-top:0.5rem;
 
   
 }
 .anchor1:hover {
  color:#068FFF;
+   
 }
 .sectionp {
   text-align: center;
+  justify-items:center;
+  align-items:center;
   padding: 20px;
   width: 340px;
   height: 160px;
@@ -162,8 +168,8 @@ border-radius: 5px;
   font-size: 17px;
   font-variation-settings: 'wght' 750;
   border-radius: 3%;
-  width: 255px;
-  margin-left:5rem;
+  width: 2rem;
+
   flex-direction: row;
   margin-top: 0.5rem;
 }
