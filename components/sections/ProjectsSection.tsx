@@ -3,6 +3,8 @@ import AnimationContainer from '../utils/AnimationContainer';
 import SectionContainer from '../utils/SectionContainer';
 import TitleSectionPageContainer from '../utils/TitleSectionPageContainer';
 import Project from '../content/Projectcard';
+import { TfiWorld } from "react-icons/tfi";
+import { HiOutlineCode } from "react-icons/hi";
 
 
 
@@ -27,7 +29,10 @@ const ProjectsSection = () => {
   <header className='prtitle'>Crypto Base</header>
   <header className='prspan'>A platform where you can save your favorite coin & see the volumes,prices.</header>
 
-    <div className='prlink'> <a className='anchor1' href='https://github.com/NinadVyas/WebCryptoBase'><p className='anchor1'> ⎋ View Project </p></a></div>
+    <div className='prlink'> 
+    <a className='anchor1' href='https://github.com/NinadVyas/WebCryptoBase'><TfiWorld/></a>
+<a className='anchor1' href='https://github.com/NinadVyas/WebCryptoBase'><HiOutlineCode/></a>
+</div>
 
   
   </div>
@@ -39,7 +44,10 @@ const ProjectsSection = () => {
   <header className='prtitle'>Room Realm </header>
   <header className='prspan'>A chat room where everybody can talk about anything!</header>
 
-    <div className='prlink'> <a className='anchor1' href='https://github.com/NinadVyas/Roomrealm'><p className='anchor1'> ⎋ View Project </p></a></div>
+    <div className='prlink'>
+    <a className='anchor1' href='https://github.com/NinadVyas/Roomrealm'><TfiWorld/></a>
+<a className='anchor1' href='https://github.com/NinadVyas/Roomrealm'><HiOutlineCode/></a>
+</div>
 
   
   </div>
@@ -51,7 +59,10 @@ const ProjectsSection = () => {
   <header className='prtitle'>College Space</header>
   <header className='prspan'>A platform that provides docs and projects to learn</header>
 
-    <div className='prlink'> <a className='anchor1' href='https://github.com/NinadVyas/Collage-Space'><p className='anchor1'> ⎋ View Project </p></a></div>
+    <div className='prlink'> 
+    <a className='anchor1' href='https://github.com/NinadVyas/Collage-Space'><TfiWorld/></a>
+<a className='anchor1' href='https://github.com/NinadVyas/Collage-Space'><HiOutlineCode/></a>
+</div>
 
   
   </div>
@@ -64,7 +75,10 @@ const ProjectsSection = () => {
   <header className='prspan'>A Web App in which user can take quiz and see result instantly</header>
 
 
-    <div className='prlink'> <a className='anchor1' href='https://github.com/NinadVyas/quizweb'><p className='anchor1'> ⎋ View Project </p></a></div>
+    <div className='prlink'> 
+    <a className='anchor1' href='https://github.com/NinadVyas/quizweb'><TfiWorld/></a>
+<a className='anchor1' href='https://github.com/NinadVyas/quizweb'><HiOutlineCode/></a>
+</div>
   
   </div>
 </div>
