@@ -129,7 +129,7 @@ html,body {
 border-radius: 5px;
   width:8rem;
   margin-left:78px;
-  font-size:1.5rem;
+  font-size:28px;
   margin-top:0.5rem;
 
   
@@ -227,10 +227,10 @@ border-radius: 5px;
   grid-template-columns: auto auto;
   column-gap: 20px;
   row-gap: 20px;
-
   align-item:center;
   justify-content:center;
 }
+
 .recommendation-item,
 .testimonial-item1 {
   text-align: center;

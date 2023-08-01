@@ -30,7 +30,7 @@ const ProjectsSection = () => {
   <header className='prspan'>A platform where you can save your favorite coin & see the volumes,prices.</header>
 
     <div className='prlink'> 
-    <a className='anchor1' href='https://github.com/NinadVyas/WebCryptoBase'><TfiWorld/></a>
+    <a className='anchor1' href='cryptobaseweb.vercel.app'><TfiWorld/></a>
 <a className='anchor1' href='https://github.com/NinadVyas/WebCryptoBase'><HiOutlineCode/></a>
 </div>
 
