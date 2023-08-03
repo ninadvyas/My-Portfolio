@@ -50,10 +50,10 @@ const Todo = () => {
         {myWorkProcess.map(({ id, title, des, delay }) => (
           <AnimationContainer
             key={id}
-            customClassName=" hover:bg-zinc-900 hover:text-white  rounded border border-gray-800 hover:borderW-gray-900 bg-gray-900 p-4 shadow-sm hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] sm:p-6 transition ease"
+            customClassName=" hover:bg-[#171717] hover:text-white  rounded border border-gray-800 hover:borderW-gray-900 bg-gray-900 p-4 shadow-sm hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] sm:p-6 transition ease"
             customDelay={delay}
           >
-            <h3 className="font-bold text-2xl  tracking-tight text-slate-300 text-center">
+            <h3 className="font-bold text-2xl  tracking-tight text-gray-200 text-center">
               {title}
             </h3>
 
