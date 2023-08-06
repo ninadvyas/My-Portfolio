@@ -49,7 +49,6 @@ const AboutSection = () => {
                 'React Native',
                 'Git',
                 'UI Design',
-                'Figma',
                 'Canva'
               ].map((skill) => (
                 <div
