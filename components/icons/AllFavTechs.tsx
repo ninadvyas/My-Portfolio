@@ -8,7 +8,7 @@ const animation = {
     x: 0,
     opacity: 1
   }
-};
+}
 
 const AllFavTechs = () => {
   return (
