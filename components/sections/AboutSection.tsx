@@ -24,7 +24,8 @@ const AboutSection = () => {
             I always look forward to exceeding expectations and I am effective
             both working as an individual and as part of a team. I write
             articles and engaging blog posts about tech & lifestyle.In my
-            meantime, you can find me behind the lens, capturing moments through
+            meantime, you can find me behind the lens, capturing
+            <a href='https://framesbyme.netlify.app' className='text-gray-400'> moments </a> through
             my photography and I play chess & listen to music.
           </p>
         </AnimationContainer>
