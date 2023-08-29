@@ -2,10 +2,9 @@
 import AnimationContainer from '../utils/AnimationContainer';
 import SectionContainer from '../utils/SectionContainer';
 import TitleSectionPageContainer from '../utils/TitleSectionPageContainer';
-import Project from '../content/Projectcard';
+
 import { TfiWorld } from "react-icons/tfi";
 import { HiOutlineCode } from "react-icons/hi";
-
 
 
 const ProjectsSection = () => {

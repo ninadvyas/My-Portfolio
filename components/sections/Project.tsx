@@ -22,60 +22,85 @@ const Project = () => {
                     <p className='w-full text-base text-gray-400'>
                         These are most of the projects I've done since I started programming, some of them are personal projects, practice or for other situation.  All of my projects go to my <a href='https://github.com/NinadVyas' target='_blank' rel='noopener noreferrer' className='hover:text-white hover:underline transition-all ease'>github.com/NinadVyas</a>.
                     </p>
-                    <div className="wrapper">
-        <div className="card-container">
-            <div className="plus-icon"></div>
-            <div className="card-icon">
-            </div>
-            <div className="preview-text">CryptoBase</div>
-            <div className="card-circle">
-            </div>
-            <div className="text-wrapper">CryptoBase &mdash; CryptoBase &mdash; CryptoBase &mdash; CryptoBase &dash; CryptoBase &mdash; CryptoBase &mdash; CryptoBase &mdash; CryptoBase</div>
-        </div>
-    </div>
                     <div className="testimonials-container">
-                    <a href='https://github.com/NinadVyas/Collage-Space'>
-                            <div className="testimonial-card2">
-                                <div className='sectionp'>
-                                    <header className='prtitle'>College Space</header>
-                                    <header className='prspan'>A platform that provides docs and projects to learn</header>
+                        < div className="wrapper">
+                            <div className="card-container">
+                                <div className="cryptobase">
+                                <div className="plus-icon"></div>
+                                <div className="card-icon">
+                                </div>
+                                <div className="preview-text">Crypto Base</div>
+                                <div className="card-circle">
+                                </div>
+                                <div className="text-wrapper">Crypto Base &mdash; Crypto Base &mdash; Crypto Base &mdash; Crypto Base &dash; Crypto Base &mdash; Crypto Base &mdash; Crypto Base &mdash; Crypto Base</div>
+                                </div>
                             </div>
+                        </div>
+                        < div className="wrapper">
+                            <div className="card-container">
+                            <div className="roomrealm">
 
-                    </div>
-                    </a>
-                    <div className="testimonial-item1 bg-blue-box">
-                        <div className='sectionp'>
-                            <header className='prtitle'>Quiz Web</header>
-                            <header className='prspan'>A Web App in which user can take quiz and see result instantly</header>
+                                <div className="plus-icon"></div>
+                                <div className="card-icon">
+                                </div>
+                                <div className="preview-text">Room Realm</div>
+                                <div className="card-circle">
+                                </div>
+                                <div className="text-wrapper">Room Realm &mdash; Room Realm &mdash; Room Realm &mdash; Room Realm &dash; Room Realm &mdash; Room Realm &mdash; Room Realm &mdash; Room Realm</div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                        < div className="wrapper">
+                            <div className="card-container">
+                            <div className="collegespace">
 
-
-                            <div className='prlink'>
-                                <a className='anchor1' href='https://github.com/NinadVyas/quizweb'><TfiWorld /></a>
-                                <a className='anchor1' href='https://github.com/NinadVyas/quizweb'><HiOutlineCode /></a>
+                                <div className="plus-icon"></div>
+                                <div className="card-icon">
+                                </div>
+                                <div className="preview-text">College Space</div>
+                                <div className="card-circle">
+                                </div>
+                                <div className="text-wrapper">College Space &mdash; College Space &mdash; College Space &mdash; College Space &dash; College Space &mdash; College Space &mdash; College Space &mdash; College Space</div>
+                            </div>
                             </div>
 
                         </div>
+                        
+                        < div className="wrapper">
+                            <div className="card-container">
+                            <div className="quizweb">
+
+                                <div className="plus-icon"></div>
+                                <div className="card-icon">
+                                </div>
+                                <div className="preview-text">Quiz Web</div>
+                                <div className="card-circle">
+                                </div>
+                                <div className="text-wrapper">Quiz Web &mdash; Quiz Web &mdash; Quiz Web &mdash; Quiz Web &dash; Quiz Web &mdash; Quiz Web &mdash; Quiz Web &mdash; Quiz Web</div>
+                            </div>
+                            </div>
+
+                        </div>
+                        {/* <div className='cursor'></div> */}
+
+                    </div>
+                    <div >
+                        <a className='text-white hover:text-blue-500' href='https://github.com/NinadVyas'> <p className='btmmore'>More on Github ↗</p> </a>
                     </div>
 
-                    {/* <div className='cursor'></div> */}
 
-            </div>
-            <div >
-                <a className='text-white hover:text-blue-500' href='https://github.com/NinadVyas'> <p className='btmmore'>More on Github ↗</p> </a>
-            </div>
+
+                </AnimationContainer>
 
 
 
-        </AnimationContainer>
+            </div >
 
 
 
-      </div >
- 
-
-
-    </SectionContainer >
-  )
+        </SectionContainer >
+    )
 }
 
 export default Project;
