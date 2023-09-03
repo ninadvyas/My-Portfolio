@@ -1,11 +1,18 @@
 import { SectionContainer } from "@components/Section";
 import { Layout } from "@components/Layout";
 import Link from "next/link";
+import {
+    FaLinkedin,
+    FaTwitter,
+    FaGithub,
+    FaYoutubeSquare,
+} from "react-icons/fa";
 import Image from "next/image";
 import cry from '../public/images/cry.png';
 import quiz from '../public/images/quiz.png';
 import doc from '../public/images/doc.png';
 import rr from '../public/images/rr.png';
+
 import profilePicture from "../public/images/avatar.png";
 import { PageTitle } from "@components/Title";
 import {
@@ -68,18 +75,62 @@ export default function Home({ posts }) {
                                 className=" text-white font-extrabold"
                             >
                                 Hey I&apos;m Ninad ⇢
-                                 <PageTitle
-                                className=" text-white"
+                                <PageTitle
+                                    className=" text-white mt-4"
+                                >
+                                    An India Based Software Engineer.
+                                </PageTitle>
+                            </PageTitle>
+
+                            <div className='flex flex-row gap-5 mb-4'>
+                            <a
+                                href="https://www.linkedin.com/in/ninad-vyas-b767491a3/"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
-                                I&apos;m Software Engineer and Web Designer
-                            </PageTitle>
-                            </PageTitle>
-                           
+
+                                <FaLinkedin class=" fill-blue-500 text-4xl " />
+
+                            </a>
+
+                            {/* <a
+                                href="https://youtube.com/@ninadvyas07"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+
+                                <FaYoutubeSquare class=" fill-red-500 text-4xl" />
+
+                            </a> */}
+                            <a
+                                href="https://github.com/NinadVyas"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+
+                                <FaGithub class=" fill-white text-4xl" />
+
+
+                            </a>
+
+                            <a
+                                href="https://twitter.com/NinadVyas87"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+
+                                <FaTwitter class=" fill-[#1D9BF9] text-4xl " />
+
+                            </a>
+
                             
+
+                        </div>
                             {/* <div className="content  text-3xl md:text-3xl font-medium leading-8 lg:leading-10 tracking-tight lg:tracking-tighter text-gray-400  ">
                                 I am familiar with various software development tools and technologies as well as experience in database management.If you ever want to bounce ideas off of me or even just have a chat about technologies and experiences don't hesitate to Reach Out to me if you are interested in working with me on a project.
                             </div> */}
                         </div>
+                        
                         {/* <div class="buttons-container mt-6 flex flex-wrap gap-2">
                             
                         </div> */}
@@ -88,10 +139,11 @@ export default function Home({ posts }) {
                 {/* Card Containers */}
                 <MotionBTTContainer transition={{ delay: 0.4, duration: 0.5 }}>
                     <SectionContainer className="projects--container">
-                        <h2 className="font-bold text-4xl text-white my-4 leading-8 tracking-tighter">
-                            Here's My Projects
+                        
+                        <h2 className="font-bold text-3xl bg-emerald-500 rounded-full text-center h-9	 w-[10rem] text-white my-4 leading-8 tracking-tighter">
+                           ● Projects
                         </h2>
-                        <hr/>
+                        <hr />
                         <CardGroup className="grid scroll-m-24 gap-5 grid-cols-1 md:grid-cols-2 w-full mt-4">
                             {projectData.map((project) => (
                                 <Card
@@ -134,7 +186,7 @@ export default function Home({ posts }) {
                 </MotionBTTContainer>
                 {/* Blog Container */}
 
-                
+
             </div>
         </Layout>
     );
