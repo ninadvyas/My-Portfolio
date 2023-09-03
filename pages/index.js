@@ -30,19 +30,20 @@ const projectData = [
         id: "1",
         title: "Crypto Base",
         logo: cry,
-        link: "https://avenuelabs.co/",
+        link: "https://github.com/NinadVyas/WebCryptoBase",
         content: "A platform where you can save your favorite coin & see the volumes,prices."
     },
     {
         id: "2",
         title: "College Space",
-        link: "https://pathway.avenuelabs.co/",
+        link: "https://github.com/NinadVyas/Collage-Space",
         logo: quiz,
         content: " A platform that provides docs and projects to learn"
     },
     {
         id: "3",
         title: "Quiz Web",
+        link: "https://github.com/NinadVyas/quizweb",
         logo: doc,
         content: "A Web App in which user can take quiz and see result instantly",
         badgeContent: "On Going"
@@ -50,6 +51,7 @@ const projectData = [
     {
         id: "3",
         title: "Room Realm",
+        link: "https://github.com/NinadVyas/Roomrealm",
         logo: rr,
         content: "A chat room where everybody can talk about anything!",
         badgeContent: "On Going"
