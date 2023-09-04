@@ -12,7 +12,7 @@ export const PageTitle = ({
             }`}
         >
             <h1
-                className={`min-[320px]:text-4xl max-[600px]: text-4xl lg:text-5xl font-extrabold 
+                className={` text-4xl lg:text-4xl font-extrabold 
                 }`}
             >
                 {children}

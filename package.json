@@ -1,7 +1,7 @@
 {
-    "name": "lane",
+    "name": "ninad",
     "version": "1.0.0",
-    "description": "Lane - A personal portfolio landing template for developers and designers. Made by Avenue Labs",
+    "description": "Ninad - A personal portfolio",
     "main": "index.js",
     "private": false,
     "repository": {
@@ -20,8 +20,6 @@
         "tailwindcss",
         "tailwind"
     ],
-    "author": "Avenue Labs - Christian Luntok",
-    "homepage": "https://avenuelabs.co/",
     "scripts": {
         "dev": "next dev",
         "build": "next build",
@@ -52,7 +50,6 @@
     "devDependencies": {
         "@tailwindcss/typography": "^0.5.9",
         "autoprefixer": "^10.4.13",
-        "clsx": "^1.2.1",
         "eslint": "^8.36.0",
         "eslint-config-prettier": "^8.8.0",
         "postcss": "^8.4.21",
