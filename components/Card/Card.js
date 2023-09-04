@@ -22,7 +22,7 @@ export const Card = ({
             href={href}
             target={link ? target : "_self"}
             className={clsx(
-                "card text-black/60 block aspect-square relative transition-all duration-300",
+                "card text-black/60 block aspect-square relative transition-all duration-300 ",
                 {
                     [CardType.default]: type === "default",
                     [CardType.bordered]: type === "bordered"

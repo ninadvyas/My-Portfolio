@@ -12,8 +12,7 @@ export const PageTitle = ({
             }`}
         >
             <h1
-                className={`text-4xl lg:text-4xl font-bold leading-8 lg:leading-10 tracking-tight lg:tracking-tighter ${
-                    headingClassName && headingClassName
+                className={`min-[320px]:text-4xl max-[600px]: text-4xl lg:text-5xl font-extrabold 
                 }`}
             >
                 {children}

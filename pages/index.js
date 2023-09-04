@@ -3,9 +3,7 @@ import { Layout } from "@components/Layout";
 import Link from "next/link";
 import {
     FaLinkedin,
-    FaTwitter,
     FaGithub,
-    FaYoutubeSquare,
 } from "react-icons/fa";
 import Image from "next/image";
 import cry from '../public/images/cry.png';
@@ -61,7 +59,7 @@ const projectData = [
 export default function Home({ posts }) {
     return (
         <Layout>
-            <div className="main-wrapper wrap-md grid  px-8  mx-auto">
+            <div className="main-wrapper wrap-md grid  px-5  mx-auto">
                 {/* Header / Hero */}
                 <MotionBTTContainer transition={{ delay: 0.2, duration: 0.5 }}>
                     <SectionContainer className="hero--container flex flex-col gap-8 mt-32">
@@ -72,18 +70,19 @@ export default function Home({ posts }) {
                             height={85}
                             alt=""
                         />
-                        <div className="content-container">
+                        <div className="">
+                            
                             <PageTitle
-                                className=" text-white font-extrabold"
+                                className=" text-white font-extrabold "
                             >
-                                Hey I&apos;m Ninad ⇢
-                                <PageTitle
-                                    className=" text-white mt-4"
+                                Hey I&apos;m Ninad Vyas.
+                               
+                            </PageTitle>
+                            <p
+                                    className="min-[320px]:text-4xl max-[600px]: text-white text-4xl lg:text-5xl font-extrabold "
                                 >
                                     An India Based Software Engineer.
-                                </PageTitle>
-                            </PageTitle>
-
+                                </p>
                             <div className='flex flex-row gap-5 mb-4'>
                             <a
                                 href="https://twitter.com/NinadVyas87"
@@ -94,7 +93,7 @@ export default function Home({ posts }) {
                             <Image
                             src={xtweet}
                             className=" rounded-full bg-neutral-100 object-cover mt-[2px]"
-                            width={35}
+                            width={34}
                             alt=""
                         />
                             </a>
@@ -150,12 +149,12 @@ export default function Home({ posts }) {
                         <h2 className="font-bold text-3xl bg-emerald-500 rounded-full text-center h-9	 w-[10rem] text-white my-4 leading-8 tracking-tighter">
                            ● Projects
                         </h2>
-                        <hr />
-                        <CardGroup className="grid scroll-m-24 gap-5 grid-cols-1 md:grid-cols-2 w-full mt-4">
+                        {/* <hr /> */}
+                        <CardGroup className="grid scroll-m-24 gap-5 grid-cols-1 md:grid-cols-2 w-full mt-4 ">
                             {projectData.map((project) => (
                                 <Card
                                     key={project.id}
-                                    className="col-span-1 bg-neutral-900"
+                                    className="col-span-1 bg-neutral-900 "
                                     link={project.link}
                                     target="_blank"
                                 >
