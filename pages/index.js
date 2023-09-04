@@ -12,7 +12,7 @@ import cry from '../public/images/cry.png';
 import quiz from '../public/images/quiz.png';
 import doc from '../public/images/doc.png';
 import rr from '../public/images/rr.png';
-
+import xtweet from '../public/images/x.png';
 import profilePicture from "../public/images/avatar.png";
 import { PageTitle } from "@components/Title";
 import {
@@ -86,6 +86,19 @@ export default function Home({ posts }) {
 
                             <div className='flex flex-row gap-5 mb-4'>
                             <a
+                                href="https://twitter.com/NinadVyas87"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+
+                            <Image
+                            src={xtweet}
+                            className=" rounded-full bg-neutral-100 object-cover mt-[2px]"
+                            width={35}
+                            alt=""
+                        />
+                            </a>
+                            <a
                                 href="https://www.linkedin.com/in/ninad-vyas-b767491a3/"
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -115,15 +128,7 @@ export default function Home({ posts }) {
 
                             </a>
 
-                            <a
-                                href="https://twitter.com/NinadVyas87"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-
-                                <FaTwitter class=" fill-[#1D9BF9] text-4xl " />
-
-                            </a>
+                           
 
                             
 
