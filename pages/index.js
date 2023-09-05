@@ -1,7 +1,7 @@
 
 import { SectionContainer } from "@components/Section";
 import { Layout } from "@components/Layout";
-import Link from "next/link";
+// import Link from "next/link";
 import {
     FaLinkedin,
     FaGithub,
@@ -12,7 +12,6 @@ import quiz from '../public/images/quiz.png';
 import doc from '../public/images/doc.png';
 import rr from '../public/images/rr.png';
 import xtweet from '../public/images/x.png';
-import banner from '../public/images/banner0.png';
 import profilePicture from "../public/images/avatar.png";
 import { PageTitle } from "@components/Title";
 import {
@@ -104,12 +103,6 @@ export default function Home() {
                                     rel="noopener noreferrer">
                                     <FaLinkedin class=" fill-white-500 text-4xl " />
                                 </a>
-                                {/* <a
-                                href="https://youtube.com/@ninadvyas07"
-                                target="_blank"
-                                rel="noopener noreferrer">
-                                <FaYoutubeSquare class=" fill-red-500 text-4xl" />
-                            </a> */}
                                 <a
                                     href="https://github.com/NinadVyas"
                                     target="_blank"
@@ -117,14 +110,7 @@ export default function Home() {
                                     <FaGithub class=" fill-white text-4xl" />
                                 </a>
                             </div>
-                            {/* <div className="content  text-3xl md:text-3xl font-medium leading-8 lg:leading-10 tracking-tight lg:tracking-tighter text-gray-400  ">
-                                I am familiar with various software development tools and technologies as well as experience in database management.If you ever want to bounce ideas off of me or even just have a chat about technologies and experiences don't hesitate to Reach Out to me if you are interested in working with me on a project.
-                            </div> */}
                         </div>
-
-                        {/* <div class="buttons-container mt-6 flex flex-wrap gap-2">
-                            
-                        </div> */}
                     </SectionContainer>
                 </MotionBTTContainer>
                 {/* Card Containers */}
@@ -176,8 +162,6 @@ export default function Home() {
                     </SectionContainer>
                 </MotionBTTContainer>
                 {/* Blog Container */}
-
-
             </div>
         </Layout>
     );
