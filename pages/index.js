@@ -5,6 +5,7 @@ import { Layout } from "@components/Layout";
 import {
     FaLinkedin,
     FaGithub,
+    FaTwitter
 } from "react-icons/fa";
 import Image from "next/image";
 import cry from '../public/images/cry.png';
@@ -41,20 +42,21 @@ const projectData = [
     },
     {
         id: "3",
+        title: "Room Realm",
+        link: "https://github.com/NinadVyas/Roomrealm",
+        logo: rr,
+        content: "A chat room where everybody can talk about anything!",
+        badgeContent: "On Going"
+    },
+    {
+        id: "4",
         title: "Quiz Web",
         link: "https://github.com/NinadVyas/quizweb",
         logo: doc,
         content: "A Web App in which user can take quiz and see result instantly",
         badgeContent: "On Going"
     },
-    {
-        id: "3",
-        title: "Room Realm",
-        link: "https://github.com/NinadVyas/Roomrealm",
-        logo: rr,
-        content: "A chat room where everybody can talk about anything!",
-        badgeContent: "On Going"
-    }
+    
 ];
 
 export default function Home() {
@@ -79,35 +81,30 @@ export default function Home() {
                         <div className="">
                             <PageTitle
                                 className=" text-white font-bold ">
-                                Hey I&apos;m Ninad Vyas.
+                                Hey I&apos;m Ninad Vyas - Software Engineer & Web Designer
                             </PageTitle>
                             <p
-                                className=" text-white text-4xl lg:text-4xl font-bold ">
-                                An India Based Software Engineer.
-                            </p>
+                                className=" text-white text-2xl lg:text-2xl font-medium ">
+                            I&apos;m software engineer & web designer based on India with a passion for building things that are user-friendly, 
+                            innovative and problem solving. </p>
                             <div className='flex flex-row gap-5 mb-4'>
-                                <a
-                                    href="https://twitter.com/NinadVyas87"
-                                    target="_blank"
-                                    rel="noopener noreferrer">
-                                    <Image
-                                        src={xtweet}
-                                        className=" rounded-full bg-neutral-100 object-cover mt-[2px]"
-                                        width={34}
-                                        alt=""
-                                    />
-                                </a>
                                 <a
                                     href="https://www.linkedin.com/in/ninad-vyas-b767491a3/"
                                     target="_blank"
                                     rel="noopener noreferrer">
-                                    <FaLinkedin class=" fill-white-500 text-4xl " />
+                                    <FaLinkedin className=" fill-white-500 text-3xl " />
                                 </a>
                                 <a
                                     href="https://github.com/NinadVyas"
                                     target="_blank"
                                     rel="noopener noreferrer">
-                                    <FaGithub class=" fill-white text-4xl" />
+                                    <FaGithub className=" fill-white text-3xl" />
+                                </a>
+                                <a
+                                    href="https://twitter.com/NinadVyas87"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+                                <FaTwitter className=" fill-white-500 text-3xl " />
                                 </a>
                             </div>
                         </div>
