@@ -87,8 +87,8 @@ export default function Home() {
                                 className=" text-white text-2xl lg:text-2xl font-medium ">
                             I&apos;m software engineer & web designer based on India with a passion for building things that are user-friendly, 
                             innovative and problem solving. </p>
-                            <div className='flex flex-row gap-5 mb-4'>
-                                <p className=' w-[14rem] text-center text-3xl text-emerald-500 font-bold bg-zinc-800	 rounded-full'>
+                            <div className='flex flex-row gap-4 mb-4'>
+                                <p className='  w-48 text-center text-2xl text-emerald-500 font-bold bg-zinc-800	 rounded-full'>
                                     Let&apos;s Connect
                                 </p>
                                 <p></p>
@@ -96,19 +96,19 @@ export default function Home() {
                                     href="https://www.linkedin.com/in/ninad-vyas-b767491a3/"
                                     target="_blank"
                                     rel="noopener noreferrer">
-                                    <FaLinkedin className=" fill-neutral-400 mt-1 text-3xl " />
+                                    <FaLinkedin className=" fill-neutral-400  text-3xl " />
                                 </a>
                                 <a
                                     href="https://github.com/NinadVyas"
                                     target="_blank"
                                     rel="noopener noreferrer">
-                                    <FaGithub className=" fill-neutral-400 mt-1 text-3xl" />
+                                    <FaGithub className=" fill-neutral-400  text-3xl" />
                                 </a>
                                 <a
                                     href="https://twitter.com/NinadVyas87"
                                     target="_blank"
                                     rel="noopener noreferrer">
-                                <FaTwitter className=" fill-neutral-400 mt-1 text-3xl " />
+                                <FaTwitter className=" fill-neutral-400  text-3xl " />
                                 </a>
                             </div>
                         </div>

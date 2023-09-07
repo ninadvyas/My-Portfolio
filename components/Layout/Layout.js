@@ -7,7 +7,7 @@ export const Layout = ({ children, className = "" }) => {
         <main className={`main ${className && className}`}>
             {children}
             {/* Footer */}
-            <SectionContainer className="mt-32">
+            <SectionContainer className="mt-16">
                 <footer className="py-40 bg-black text-white">
                     <div className="wrap-sm mx-auto px-8 grid gap-16">
                         <MotionBTTContainer
