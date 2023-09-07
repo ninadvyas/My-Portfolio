@@ -88,23 +88,27 @@ export default function Home() {
                             I&apos;m software engineer & web designer based on India with a passion for building things that are user-friendly, 
                             innovative and problem solving. </p>
                             <div className='flex flex-row gap-5 mb-4'>
+                                <p className=' w-[14rem] text-center text-3xl text-emerald-500 font-bold bg-zinc-800	 rounded-full'>
+                                    Let&apos;s Connect
+                                </p>
+                                <p></p>
                                 <a
                                     href="https://www.linkedin.com/in/ninad-vyas-b767491a3/"
                                     target="_blank"
                                     rel="noopener noreferrer">
-                                    <FaLinkedin className=" fill-white-500 text-3xl " />
+                                    <FaLinkedin className=" fill-neutral-400 mt-1 text-3xl " />
                                 </a>
                                 <a
                                     href="https://github.com/NinadVyas"
                                     target="_blank"
                                     rel="noopener noreferrer">
-                                    <FaGithub className=" fill-white text-3xl" />
+                                    <FaGithub className=" fill-neutral-400 mt-1 text-3xl" />
                                 </a>
                                 <a
                                     href="https://twitter.com/NinadVyas87"
                                     target="_blank"
                                     rel="noopener noreferrer">
-                                <FaTwitter className=" fill-white-500 text-3xl " />
+                                <FaTwitter className=" fill-neutral-400 mt-1 text-3xl " />
                                 </a>
                             </div>
                         </div>
@@ -114,8 +118,8 @@ export default function Home() {
                 <MotionBTTContainer transition={{ delay: 0.4, duration: 0.5 }}>
                     <SectionContainer className="projects--container">
 
-                        <h2 className="font-bold text-2xl bg-emerald-500 rounded-full text-center h-9	 w-[10rem] text-white my-4 leading-8 tracking-tighter">
-                            ● Projects
+                        <h2 className="font-bold text-4xl rounded-full text-left h-9  w-[10rem] text-white my-4 leading-8 tracking-tighter">
+                            Projects
                         </h2>
                         {/* <hr /> */}
                         <CardGroup className="grid scroll-m-24 gap-5 grid-cols-1 md:grid-cols-2 w-full mt-4 ">
