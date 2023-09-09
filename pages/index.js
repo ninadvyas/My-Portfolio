@@ -9,11 +9,12 @@ import {
 } from "react-icons/fa";
 import Image from "next/image";
 import cry from '../public/images/cry.png';
-import quiz from '../public/images/quiz.png';
-import doc from '../public/images/doc.png';
+import qw from '../public/images/qw.png';
+import cs from '../public/images/cs.png';
 import rr from '../public/images/rr.png';
-import xtweet from '../public/images/x.png';
-import profilePicture from "../public/images/avatar.png";
+import ww from '../public/images/ww.png';
+import lu from '../public/images/lu.png';
+import profilePicture from "../public/images/avatar1.jpeg";
 import { PageTitle } from "@components/Title";
 import {
     Card,
@@ -31,14 +32,16 @@ const projectData = [
         title: "Crypto Base",
         logo: cry,
         link: "https://github.com/NinadVyas/WebCryptoBase",
-        content: "A platform where you can save your favorite coin & see the volumes,prices."
+        content: "A platform where you can save your favorite coin & see the volumes,prices.",
+        badgeContent: "Completed"
     },
     {
         id: "2",
         title: "College Space",
         link: "https://github.com/NinadVyas/Collage-Space",
-        logo: quiz,
-        content: " A platform that provides docs and projects to learn"
+        logo: cs,
+        content: " A platform that provides docs and projects to learn",
+        badgeContent: "Completed"
     },
     {
         id: "3",
@@ -46,17 +49,33 @@ const projectData = [
         link: "https://github.com/NinadVyas/Roomrealm",
         logo: rr,
         content: "A chat room where everybody can talk about anything!",
-        badgeContent: "On Going"
+        badgeContent: "Completed"
     },
     {
         id: "4",
         title: "Quiz Web",
         link: "https://github.com/NinadVyas/quizweb",
-        logo: doc,
+        logo: qw,
         content: "A Web App in which user can take quiz and see result instantly",
-        badgeContent: "On Going"
+        badgeContent: "Completed"
     },
-    
+    {
+        id: "5",
+        title: "Weather Web",
+        link: "https://github.com/NinadVyas/WeatherApp",
+        logo: ww,
+        content: "A weather web app in which you can find any city weather status",
+        badgeContent: "Completed"
+    },
+    {
+        id: "5",
+        title: "Login Ui",
+        link: "https://github.com/NinadVyas/Login-Ui-React-Native",
+        logo: lu,
+        content: "Basic login and signup ui using react native and for authentication I have used firebase",
+        badgeContent: "Completed"
+    },
+
 ];
 
 export default function Home() {
@@ -78,16 +97,40 @@ export default function Home() {
                             height={85}
                             alt=""
                         />
-                        <div className="">
-                            <PageTitle
+                        <div className="content-container">
+                            <div className="page-title--content max-w-[54rem] mb-8 lg:mb-4">
+                                <h1 className="text-4xl lg:text-3xl font-medium leading-8 lg:leading-10 tracking-tight lg:tracking-tighter mb-0 text-white">
+                                Hey - I&apos;m Ninad Vyas
+                                </h1>
+                            </div>
+                            <div className="content text-3xl text-neutral-400 md:text-3xl font-medium leading-8 lg:leading-10 tracking-tight lg:tracking-tighter">
+                            I&apos;m a software engineer based in India, with a passion for building solutions that are user-friendly,
+                                innovative and problem solving.
+                </div>
+                            {/* <PageTitle
                                 className=" text-white font-bold ">
                                 Hey I&apos;m Ninad Vyas - Software Engineer & Web Designer
-                            </PageTitle>
-                            <p
+                            </PageTitle> */}
+                            {/* <p
                                 className=" text-white text-2xl lg:text-2xl font-medium ">
-                            I&apos;m software engineer & web designer based on India with a passion for building things that are user-friendly, 
-                            innovative and problem solving. </p>
-                            <div className='flex flex-row gap-4 mb-4'>
+                                I&apos;m software engineer & web designer based on India with a passion for building things that are user-friendly,
+                                innovative and problem solving. </p> */}
+                            <div class="buttons-container mt-6 mb-4 flex flex-wrap gap-2">
+                                <a href="mailto:ninadvyas07@gmail.com" class="bg-[#363636] py-[4px] rounded-lg px-2 flex align-center flex-[0,0,auto] justify-center text-sm text-white-300 h-fit flex-row hover:bg-neutral-600 transition-colors duration-300">ninadvyas07@gmail.com</a>
+                                <a href="https://www.chess.com/member/ninadvsd" target="_blank" class="bg-[#363636] py-[4px] rounded-lg px-2 flex align-center flex-[0,0,auto] justify-center text-sm text-white-300 h-fit flex-row hover:bg-neutral-600 transition-colors duration-300">Chess.com</a>
+                                <a href="https://dev.to/ninadvyas" target="_blank" class="bg-[#363636] py-[4px] rounded-lg px-2 flex align-center flex-[0,0,auto] justify-center text-sm text-white-300 h-fit flex-row hover:bg-neutral-600 transition-colors duration-300">Dev.to</a>
+                          <a href="https://framesbyme.netlify.app" target="_blank" class="bg-[#363636] py-[4px] rounded-lg px-2 flex align-center flex-[0,0,auto] justify-center text-sm text-white-300 h-fit flex-row hover:bg-neutral-600 transition-colors duration-300">Photography</a>
+                                <a href="https://github.com/NinadVyas/" class="bg-[#363636] py-1 rounded-lg px-1 flex align-center flex-[0,0,auto] justify-center text-sm text-white-300 h-fit flex-row hover:bg-neutral-600 transition-colors duration-300" target="_blank" title="Follow Christian Luntok | Avenue Labs on Github">
+                                    <svg viewBox="0 0 256 256" class="w-5 h-5 inline" astro-icon="ph:github-logo-duotone"><path fill="currentColor" d="M200 112v8a48 48 0 0 1-48 48h-48a48 48 0 0 1-48-48v-8a49.3 49.3 0 0 1 8.5-27.3A52 52 0 0 1 68 40a52 52 0 0 1 43.8 24h32.4A52 52 0 0 1 188 40a52 52 0 0 1 3.5 44.7A49.3 49.3 0 0 1 200 112z" opacity=".2"></path><path fill="currentColor" d="M216 216a16 16 0 0 1-16-16v-8a32.1 32.1 0 0 0-14.8-27 55.8 55.8 0 0 0 22.8-45v-8a58 58 0 0 0-7.7-28.3 59.9 59.9 0 0 0-5.4-47.7 7.8 7.8 0 0 0-6.9-4 59.7 59.7 0 0 0-48 24h-24a59.7 59.7 0 0 0-48-24 7.8 7.8 0 0 0-6.9 4 59.9 59.9 0 0 0-5.4 47.7A58 58 0 0 0 48 112v8a55.8 55.8 0 0 0 22.8 45A32.1 32.1 0 0 0 56 192v8a16 16 0 0 1-16 16 8 8 0 0 0 0 16 32.1 32.1 0 0 0 32-32v-8a16 16 0 0 1 16-16h12v40a16 16 0 0 1-16 16 8 8 0 0 0 0 16 32.1 32.1 0 0 0 32-32v-40h24v40a32.1 32.1 0 0 0 32 32 8 8 0 0 0 0-16 16 16 0 0 1-16-16v-40h12a16 16 0 0 1 16 16v8a32.1 32.1 0 0 0 32 32 8 8 0 0 0 0-16zM64 120v-8a42.7 42.7 0 0 1 6.9-22.5 7.9 7.9 0 0 0 1.1-7.7 43.7 43.7 0 0 1 .8-33.5 43.6 43.6 0 0 1 32.3 20 8 8 0 0 0 6.7 3.7h32.4a8 8 0 0 0 6.7-3.7 43.6 43.6 0 0 1 32.3-20 43.7 43.7 0 0 1 .8 33.5 8.2 8.2 0 0 0 1.1 7.7A42.7 42.7 0 0 1 192 112v8a40 40 0 0 1-40 40h-48a40 40 0 0 1-40-40z"></path></svg>
+                                </a><a href="https://www.linkedin.com/in/ninadvyas/" class="bg-[#363636] py-1 rounded-lg px-1 flex align-center flex-[0,0,auto] justify-center text-sm text-white-300 h-fit flex-row hover:bg-neutral-600 transition-colors duration-300" target="_blank" title="Follow Christian Luntok | Developer &amp; Designer on LinkedIn">
+                                    <svg viewBox="0 0 256 256" class="w-5 h-5 inline" astro-icon="ph:linkedin-logo-duotone"><path fill="currentColor" d="M220 44v168a8 8 0 0 1-8 8H44a8 8 0 0 1-8-8V44a8 8 0 0 1 8-8h168a8 8 0 0 1 8 8z" opacity=".2"></path><path fill="currentColor" d="M96 112v64a8 8 0 0 1-16 0v-64a8 8 0 0 1 16 0zm-8-44a12 12 0 1 0 12 12 12 12 0 0 0-12-12zm140-24v168a16 16 0 0 1-16 16H44a16 16 0 0 1-16-16V44a16 16 0 0 1 16-16h168a16 16 0 0 1 16 16zm-16 168V44H44v168zm-64-108a36 36 0 0 0-20.2 6.2A8 8 0 0 0 112 112v64a8 8 0 0 0 16 0v-36a20 20 0 0 1 40 0v36a8 8 0 0 0 16 0v-36a36 36 0 0 0-36-36z"></path></svg>
+                                </a><a href="mailto:ninadvyas07@gmail.com" class="bg-[#363636] py-1 rounded-lg px-1 flex align-center flex-[0,0,auto] justify-center text-sm text-white-300 h-fit flex-row hover:bg-neutral-600 transition-colors duration-300" target="_blank" title="Send an email to Christian Luntok | Developer &amp; Designer">
+                                    <svg viewBox="0 0 24 24" class="w-5 h-5 inline" astro-icon="mdi:email"><path fill="currentColor" d="m20 8-8 5-8-5V6l8 5 8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"></path></svg>
+                                </a><a href="https://twitter.com/ninadvsd/" class="bg-[#363636] py-1 rounded-lg px-1 flex align-center flex-[0,0,auto] justify-center text-sm text-white-300 h-fit flex-row hover:bg-neutral-600 transition-colors duration-300" target="_blank" title="Follow Christian Luntok | Avenue Labs on Twitter">
+                                    <svg viewBox="0 0 256 256" class="w-5 h-5 inline" astro-icon="ph:twitter-logo-duotone"><path fill="currentColor" d="m240 72-32.3 32.3A127.9 127.9 0 0 1 80 224c-32 0-40-12-40-12s32-12 48-36c0 0-64-32-48-120 0 0 40 40 88 48V88c0-22 18.5-40.3 40.5-40a40 40 0 0 1 36.2 24z" opacity=".2"></path><path fill="currentColor" d="M247.4 68.9A8 8 0 0 0 240 64h-30.4a48.2 48.2 0 0 0-41-24A48.3 48.3 0 0 0 120 88v6.1C79.3 83.5 46 50.7 45.7 50.3a8 8 0 0 0-8.1-1.9 8.1 8.1 0 0 0-5.5 6.2c-8.7 48.2 5.8 80.5 19.5 99.1a108.6 108.6 0 0 0 24.7 24.4c-15.3 17.3-38.9 26.3-39.1 26.4a8 8 0 0 0-3.9 11.9c.8 1.2 3.8 5.1 11.1 8.8 9.1 4.5 21.1 6.8 35.6 6.8 70.5 0 129.5-54.3 135.5-124.2l30.2-30.1a8.4 8.4 0 0 0 1.7-8.8zm-45.3 29.7a7.8 7.8 0 0 0-2.3 5.2C195.7 166.7 143.1 216 80 216c-10.6 0-18-1.4-23.2-3.1 11.5-6.2 27.5-17 37.9-32.5a8 8 0 0 0 1-6.4 8.1 8.1 0 0 0-4.1-5.1c-.1-.1-14.9-7.8-27.6-25.3-14.4-19.8-20.5-43.9-18.1-71.7 15.8 13 46 34.2 80.8 40a8.1 8.1 0 0 0 6.5-1.8 8.2 8.2 0 0 0 2.8-6.1V88a32 32 0 0 1 61.3-12.8 8.1 8.1 0 0 0 7.4 4.8h16z"></path></svg>
+                                </a>
+                            </div>
+                            {/* <div className='flex flex-row gap-4 mb-4'>
                                 <p className='  w-48 text-center text-2xl text-emerald-500 font-bold bg-zinc-800	 rounded-full'>
                                     Let&apos;s Connect
                                 </p>
@@ -108,9 +151,9 @@ export default function Home() {
                                     href="https://twitter.com/NinadVyas87"
                                     target="_blank"
                                     rel="noopener noreferrer">
-                                <FaTwitter className=" fill-neutral-400  text-3xl " />
+                                    <FaTwitter className=" fill-neutral-400  text-3xl " />
                                 </a>
-                            </div>
+                            </div> */}
                         </div>
                     </SectionContainer>
                 </MotionBTTContainer>
@@ -130,20 +173,20 @@ export default function Home() {
                                     link={project.link}
                                     target="_blank"
                                 >
-                                    {/* {!!project.badgeContent && (
+                                    {!!project.badgeContent && (
                                         <BadgeGroup
                                             className="mb-0 m-6"
                                             alignment="left"
                                         >
                                             <BadgeMessage>
-                                                On Going
+                                                Completed
                                             </BadgeMessage>
                                         </BadgeGroup>
-                                    )} */}
+                                    )}
                                     <CardBody>
                                         <CardImage
                                             src={project.logo}
-                                            alt="Articoole Banner"
+                                            alt="banner"
                                             imageClassName="absolute top-0 right-0 m-6 p-4 bg-white rounded-3xl"
                                             width={80}
                                             height={80}
