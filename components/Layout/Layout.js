@@ -57,8 +57,7 @@ export const Layout = ({ children, className = "" }) => {
                             transition={{ delay: 0.2, duration: 0.5 }}
                         >
                            
-                               2023 © Ninad Vyas - Personal Website
-
+                               2023 © Ninad Vyas 
                         </MotionBTTContainer>
                         
                     </div>
