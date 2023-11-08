@@ -132,7 +132,7 @@ export default function Home() {
                             {projectData.map((project) => (
                                 <Card
                                     key={project.id}
-                                    className="col-span-1 bg-neutral-900  hover:border "
+                                    className="col-span-1 bg-neutral-900  hover:bg-white"
                                     link={project.link}
                                     target="_blank"
                                 >
@@ -150,12 +150,12 @@ export default function Home() {
                                         <CardImage
                                             src={project.logo}
                                             alt="banner"
-                                            imageClassName="absolute top-0 right-0 m-6 p-4 bg-white rounded-3xl"
+                                            imageClassName="absolute top-0 right-0 m-6 p-4 bg-white rounded-3xl border border-neutral-300"
                                             width={80}
                                             height={80}
                                         />
                                         <div className="card-content absolute bottom-8 left-6 right-6">
-                                            <CardHeader className="text-white">
+                                            <CardHeader className="text-sky-500">
                                                 {project.title}
                                             </CardHeader>
                                             <div className="content break-words  text-3xl font-medium leading-10 tracking-tight lg:tracking-tighter text-neutral-500 ">
