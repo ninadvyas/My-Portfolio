@@ -132,7 +132,7 @@ export default function Home() {
                             {projectData.map((project) => (
                                 <Card
                                     key={project.id}
-                                    className="col-span-1 bg-neutral-900 "
+                                    className="col-span-1 bg-neutral-900  hover:border "
                                     link={project.link}
                                     target="_blank"
                                 >
