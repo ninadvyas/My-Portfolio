@@ -20,6 +20,7 @@ import {
 } from "@components/Card";
 import { BadgeGroup, BadgeMessage } from "@components/Badge";
 import { MotionBTTContainer } from "@components/Motion";
+import Cursor from "./Cursor";
 
 const projectData = [
     {
@@ -76,6 +77,7 @@ const projectData = [
 export default function Home() {
     return (
         <Layout>
+            <Cursor/>
             <div className="main-wrapper wrap-md grid  px-5  mx-auto">
                 {/* Header / Hero */}
                 <MotionBTTContainer transition={{ delay: 0.2, duration: 0.5 }}>
@@ -98,7 +100,7 @@ export default function Home() {
                                     Hey - I&apos;m Ninad Vyas
                                 </h1>
                             </div>
-                            <div className="content text-3xl text-neutral-400 md:text-3xl font-medium leading-8 lg:leading-10 tracking-tight lg:tracking-tighter">
+                            <div className="content text-3xl text-neutral-300 md:text-3xl font-medium leading-8 lg:leading-10 tracking-tight lg:tracking-tighter">
                                 I&apos;m a software engineer based in India, with a passion for building solutions that are user-friendly,
                                 innovative and problem solving.
                             </div>

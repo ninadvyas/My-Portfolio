@@ -37,6 +37,7 @@
         "eslint-config-next": "13.1.2",
         "framer-motion": "^10.16.2",
         "gray-matter": "^4.0.3",
+        "gsap": "^3.12.2",
         "next": "13.1.2",
         "next-secure-headers": "^2.2.0",
         "next-seo": "^5.15.0",
