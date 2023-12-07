@@ -20,7 +20,7 @@ import {
 } from "@components/Card";
 import { BadgeGroup, BadgeMessage } from "@components/Badge";
 import { MotionBTTContainer } from "@components/Motion";
-import Cursor from "./Cursor";
+// import Cursor from "./Cursor";
 
 const projectData = [
     {
@@ -77,7 +77,6 @@ const projectData = [
 export default function Home() {
     return (
         <Layout>
-            <Cursor/>
             <div className="main-wrapper wrap-md grid  px-5  mx-auto">
                 {/* Header / Hero */}
                 <MotionBTTContainer transition={{ delay: 0.2, duration: 0.5 }}>
@@ -172,6 +171,7 @@ export default function Home() {
                 </MotionBTTContainer>
                 {/* Blog Container */}
             </div>
+         
         </Layout>
     );
 }
