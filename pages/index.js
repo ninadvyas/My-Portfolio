@@ -94,11 +94,25 @@ export default function Home() {
                             alt=""
                         />
                         <div className="content-container">
+
                             <div className="page-title--content max-w-[54rem] mb-8 lg:mb-4">
-                                <h1 className="text-4xl lg:text-3xl font-medium leading-8 lg:leading-10 tracking-tight lg:tracking-tighter mb-0 text-white">
+                                <h1 className="text-4xl lg:text-3xl font-medium leading-8 lg:leading-10 tracking-tight lg:tracking-tighter mb-0 text-neutral-300">
                                     Hey - I&apos;m Ninad Vyas
                                 </h1>
                             </div>
+                            <div className=" mt-3 flex items-center gap-2 max-lg:hidden">
+        <div>
+          <div className="h-2.5 w-2.5 rounded-full bg-emerald-600">
+            <div className="z-[11] h-2.5 w-2.5 animate-ping rounded-full bg-emerald-600 transition-[4s]" />
+          </div>
+        </div>
+        <span size="sm" variant="muted" className="font-mono text-white font-bold">
+        available for hire
+        </span>
+      </div>
+
+                        </div>
+                        <div>
                             <div className="content text-3xl text-neutral-300 md:text-3xl font-medium leading-8 lg:leading-10 tracking-tight lg:tracking-tighter">
                                 I&apos;m a software engineer based in India, with a passion for building solutions that are user-friendly,
                                 innovative and problem solving.
@@ -121,6 +135,7 @@ export default function Home() {
                         </div>
                     </SectionContainer>
                 </MotionBTTContainer>
+
                 {/* Card Containers */}
                 <MotionBTTContainer transition={{ delay: 0.4, duration: 0.5 }}>
                     <SectionContainer className="projects--container">
@@ -171,7 +186,7 @@ export default function Home() {
                 </MotionBTTContainer>
                 {/* Blog Container */}
             </div>
-         
+
         </Layout>
     );
 }

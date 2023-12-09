@@ -7,8 +7,9 @@ export const Layout = ({ children, className = "" }) => {
         <main className={`main ${className && className}`}>
             {children}
             {/* Footer */}
-            <SectionContainer className="mt-16">
+            <SectionContainer className="mt-16 ">
                 <footer className="py-40 bg-black text-white">
+
                     <div className="wrap-sm mx-auto px-8 grid gap-16">
                         <MotionBTTContainer
                             transition={{ delay: 0.2, duration: 0.5 }}
@@ -53,13 +54,6 @@ export const Layout = ({ children, className = "" }) => {
                                 </div>
                             </div>
                         </MotionBTTContainer>
-                        <MotionBTTContainer
-                            transition={{ delay: 0.2, duration: 0.5 }}
-                        >
-                           
-                               2023 © Ninad Vyas 
-                        </MotionBTTContainer>
-                        
                     </div>
                 </footer>
             </SectionContainer>
