@@ -85,7 +85,7 @@ export default function Home() {
                             className=" rounded-md bg-neutral-100 object-cover border border-white opacity-40	"
                             alt=""
                          /> */}
-                    <SectionContainer className="hero--container flex flex-col gap-8 mt-32">
+                    <SectionContainer className="hero--container flex flex-col gap-5 mt-32">
                         <div className="flex gap-8">
                             <Image
                                 src={profilePicture}
@@ -94,15 +94,15 @@ export default function Home() {
                                 height={85}
                                 alt=""
                             />
-                            <div>
-                                <h1 className="text-xl lg:text-xl font-mono font-medium leading-8 lg:leading-10 tracking-tight lg:tracking-tighter mb-0 text-neutral-300">
+                            <div className=" mt-[12px]">
+                                <h1 className="text-xl lg:text-xl  font-medium  mb-0 text-white">
                                     {/* Hey - I&apos;m Ninad Vyas */}
                                     Ninad Vyas
                                 </h1>
-                                <h1 className="text-xl lg:text-xl font-mono font-medium leading-8 lg:leading-10 tracking-tight lg:tracking-tighter mb-0 text-neutral-300">
+                                <span className="text-xl lg:text-xl  font-medium mb-0 text-neutral-400">
 
                                     Developer & Designer
-                                </h1>
+                                </span>
                             </div>
                         </div>
                         <div>
@@ -112,21 +112,23 @@ export default function Home() {
                                         <div className="z-[11] h-3.5 w-3.5 animate-ping rounded-full bg-emerald-600 transition-[4s]" />
                                     </div>
                                 </div>
-                                <span size="sm" variant="muted" className="font-mono text-white font-bold">
-                                    available for hire
+                                <a href="mailto:ninadvyas07@gmail.com"  rel="noreferrer"  target="_blank" title="Send an email to Ninad Vyas">
+                                <span size="sm" variant="muted" className="hover:underline text-white subpixel-antialiased">
+                                    Available for hire
                                 </span>
+                                </a>
                             </div>
                         </div>
                         <div>
-                            <div className="content font-mono text-xl text-neutral-300 md:text-xl font-medium leading-8 lg:leading-10 tracking-tight lg:tracking-tighter">
+                            <div className=" content tracking-wide text-xl text-neutral-300 md:text-xl font-medium ">
                                 I&apos;m a software engineer based in India, with a passion for building solutions that are user-friendly,
                                 innovative and problem solving.
                             </div>
                             <div class="buttons-container mt-6 mb-4 flex flex-wrap gap-2">
-                                <a href="mailto:ninadvyas07@gmail.com" class="bg-[#363636] py-[4px] rounded-lg px-2 flex align-center flex-[0,0,auto] justify-center text-sm text-white-300 h-fit flex-row hover:bg-neutral-600 transition-colors duration-300 font-mono">ninadvyas07@gmail.com</a>
-                                <a href="https://www.chess.com/member/ninadvsd" rel="noreferrer" target="_blank" class="bg-[#363636] py-[4px] rounded-lg px-2 flex align-center flex-[0,0,auto] justify-center text-sm text-white-300 h-fit flex-row hover:bg-neutral-600 font-mono transition-colors duration-300">Chess.com</a>
-                                <a href="https://dev.to/ninadvyas" rel="noreferrer" target="_blank" class="bg-[#363636] py-[4px] rounded-lg px-2 flex align-center flex-[0,0,auto] justify-center text-sm text-white-300 h-fit flex-row hover:bg-neutral-600 transition-colors font-mono duration-300">Dev.to</a>
-                                <a href="https://framesbyme.netlify.app" rel="noreferrer" target="_blank" class="bg-[#363636] py-[4px] rounded-lg px-2 flex align-center flex-[0,0,auto] justify-center text-sm text-white-300 h-fit flex-row hover:bg-neutral-600 transition-colors  font-mono duration-300" >Photography</a>
+                                {/* <a href="mailto:ninadvyas07@gmail.com" class="bg-[#363636] py-[4px] rounded-lg px-2 flex align-center flex-[0,0,auto] justify-center text-sm text-white-300 h-fit flex-row hover:bg-neutral-600 transition-colors duration-300 ">ninadvyas07@gmail.com</a> */}
+                                <a href="https://www.chess.com/member/ninadvsd" rel="noreferrer" target="_blank" class="bg-[#363636] py-[4px] rounded-lg px-2 flex align-center flex-[0,0,auto] justify-center text-sm text-white-300 h-fit flex-row hover:bg-neutral-600  transition-colors duration-300">Chess.com</a>
+                                <a href="https://dev.to/ninadvyas" rel="noreferrer" target="_blank" class="bg-[#363636] py-[4px] rounded-lg px-2 flex align-center flex-[0,0,auto] justify-center text-sm text-white-300 h-fit flex-row hover:bg-neutral-600 transition-colors  duration-300">Dev.to</a>
+                                <a href="https://framesbyme.netlify.app" rel="noreferrer" target="_blank" class="bg-[#363636] py-[4px] rounded-lg px-2 flex align-center flex-[0,0,auto] justify-center text-sm text-white-300 h-fit flex-row hover:bg-neutral-600 transition-colors   duration-300" >Photography</a>
                                 <a href="https://github.com/NinadVyas/" rel="noreferrer" class="bg-[#363636] py-1 rounded-lg px-1 flex align-center flex-[0,0,auto] justify-center text-sm text-white-300 h-fit flex-row hover:bg-neutral-600 transition-colors duration-300" target="_blank" title="Follow Ninad Vyas on Github">
                                     <svg viewBox="0 0 256 256" class="w-5 h-5 inline" astro-icon="ph:github-logo-duotone"><path fill="currentColor" d="M200 112v8a48 48 0 0 1-48 48h-48a48 48 0 0 1-48-48v-8a49.3 49.3 0 0 1 8.5-27.3A52 52 0 0 1 68 40a52 52 0 0 1 43.8 24h32.4A52 52 0 0 1 188 40a52 52 0 0 1 3.5 44.7A49.3 49.3 0 0 1 200 112z" opacity=".2"></path><path fill="currentColor" d="M216 216a16 16 0 0 1-16-16v-8a32.1 32.1 0 0 0-14.8-27 55.8 55.8 0 0 0 22.8-45v-8a58 58 0 0 0-7.7-28.3 59.9 59.9 0 0 0-5.4-47.7 7.8 7.8 0 0 0-6.9-4 59.7 59.7 0 0 0-48 24h-24a59.7 59.7 0 0 0-48-24 7.8 7.8 0 0 0-6.9 4 59.9 59.9 0 0 0-5.4 47.7A58 58 0 0 0 48 112v8a55.8 55.8 0 0 0 22.8 45A32.1 32.1 0 0 0 56 192v8a16 16 0 0 1-16 16 8 8 0 0 0 0 16 32.1 32.1 0 0 0 32-32v-8a16 16 0 0 1 16-16h12v40a16 16 0 0 1-16 16 8 8 0 0 0 0 16 32.1 32.1 0 0 0 32-32v-40h24v40a32.1 32.1 0 0 0 32 32 8 8 0 0 0 0-16 16 16 0 0 1-16-16v-40h12a16 16 0 0 1 16 16v8a32.1 32.1 0 0 0 32 32 8 8 0 0 0 0-16zM64 120v-8a42.7 42.7 0 0 1 6.9-22.5 7.9 7.9 0 0 0 1.1-7.7 43.7 43.7 0 0 1 .8-33.5 43.6 43.6 0 0 1 32.3 20 8 8 0 0 0 6.7 3.7h32.4a8 8 0 0 0 6.7-3.7 43.6 43.6 0 0 1 32.3-20 43.7 43.7 0 0 1 .8 33.5 8.2 8.2 0 0 0 1.1 7.7A42.7 42.7 0 0 1 192 112v8a40 40 0 0 1-40 40h-48a40 40 0 0 1-40-40z"></path></svg>
                                 </a><a href="https://www.linkedin.com/in/ninadvyas/" rel="noreferrer" class="bg-[#363636] py-1 rounded-lg px-1 flex align-center flex-[0,0,auto] justify-center text-sm text-white-300 h-fit flex-row hover:bg-neutral-600 transition-colors duration-300" target="_blank" title="Follow Ninad Vyas on LinkedIn">
