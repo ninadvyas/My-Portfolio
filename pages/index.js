@@ -106,8 +106,8 @@ export default function Home() {
                             </div>
                         </div>
                         <div>
-                            <div className=" flex items-center gap-2 ">
-                                <div>
+                            <div className=" flex items-center gap-2 bg-neutral-900	 w-44 rounded-lg h-8">
+                                <div className='ml-3'>
                                     <div className="h-3.5 w-3.5 rounded-full bg-emerald-600">
                                         <div className="z-[11] h-3.5 w-3.5 animate-ping rounded-full bg-emerald-600 transition-[4s]" />
                                     </div>
