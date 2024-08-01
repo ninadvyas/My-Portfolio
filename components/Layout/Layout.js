@@ -6,7 +6,6 @@ export const Layout = ({ children, className = "" }) => {
     return (
         <main className={`main ${className && className}`}>
             {children}
-            {/* Footer */}
             <SectionContainer className="mt-16 ">
                 <footer className="py-40 bg-black text-white">
 
@@ -28,9 +27,9 @@ export const Layout = ({ children, className = "" }) => {
                             <div className="footer-credits">
                                 <Link
                                     className="block text-3xl md:text-5xl text-neutral-400 lg:text-4xl hover:text-white hover:underline font-medium mb-2 md:mb-8 lg:mb-4 leading-10 tracking-tighter"
-                                    href="mailto:hey@avenuelabs.co"
+                                    href="mailto:ninadvsd@gmail.com"
                                 >
-                                    ninadvyas07@gmail.com
+                                    ninadvsd@gmail.com
                                 </Link>
                                 <div className="footer-socials text-neutral-400 font-medium grid gap-6 md:gap-10 grid-cols-3 max-w-md text-xl md:text-3xl lg:text-2xl leading-10 tracking-tighter">
                                     <Link

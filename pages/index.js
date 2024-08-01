@@ -9,6 +9,10 @@ import cs from '../public/images/cs.png';
 import rr from '../public/images/rr.png';
 import ww from '../public/images/ww.png';
 import lu from '../public/images/lu.png';
+import twritter from '../public/images/twritter.png';
+import snip from '../public/images/snipurl.png';
+import bookmark from '../public/images/bookmark.png';
+import better from '../public/images/better.png';
 import profilePicture from "../public/images/avatar1.jpeg";
 import { PageTitle } from "@components/Title";
 import {
@@ -25,38 +29,62 @@ import { MotionBTTContainer } from "@components/Motion";
 const projectData = [
     {
         id: "1",
-        title: "Crypto Base",
-        logo: cry,
-        link: "https://github.com/NinadVyas/WebCryptoBase",
-        content: "A platform where you can save your favorite coin & see the volumes,prices.",
+        title: "T-Writer",
+        logo: twritter,
+        link: "https://github.com/ninadvyas/T-Writter",
+        content: "Experience typing on a classic typewriter, with authentic sounds, through modern digital interfaces.",
         badgeContent: "Completed"
     },
     {
         id: "2",
-        title: "College Space",
-        link: "https://github.com/NinadVyas/Collage-Space",
-        logo: cs,
-        content: " A platform that provides docs and projects to learn",
+        title: "Better Bridges",
+        logo: better,
+        link: "https://github.com/ninadvyas/better-bridges",
+        content: "An interactive web platform featuring dynamic communication and social engagement.",
         badgeContent: "Completed"
     },
     {
         id: "3",
-        title: "Room Realm",
-        link: "https://github.com/NinadVyas/Roomrealm",
-        logo: rr,
-        content: "A chat room where everybody can talk about anything!",
+        title: "Snip Url",
+        logo: snip,
+        link: "https://github.com/ninadvyas/SnipUrl",
+        content: "URL shortener that generates custom urls, trackable links with analytics.",
         badgeContent: "Completed"
     },
     {
         id: "4",
-        title: "Quiz Web",
-        link: "https://github.com/NinadVyas/quizweb",
-        logo: qw,
-        content: "A Web App in which user can take quiz and see result instantly",
+        title: "Bookmarks",
+        logo: bookmark,
+        link: "https://github.com/ninadvyas/Bookmarks",
+        content: "Bookmarks manager to save, categorize, search, and preview your favorite web links.",
+        badgeContent: "OnGoing"
+    },
+    // {
+    //     id: "5",
+    //     title: "Crypto Base",
+    //     logo: cry,
+    //     link: "https://github.com/NinadVyas/WebCryptoBase",
+    //     content: "A platform where you can save your favorite coin & see the volumes,prices.",
+    //     badgeContent: "Completed"
+    // },
+    {
+        id: "6",
+        title: "College Space",
+        link: "https://github.com/NinadVyas/Collage-Space",
+        logo: cs,
+        content: "A platform that provides docs and projects to learn",
         badgeContent: "Completed"
     },
     {
-        id: "5",
+        id: "7",
+        title: "Room Realm",
+        link: "https://github.com/NinadVyas/Roomrealm",
+        logo: rr,
+        content: "Room where everybody can talk about anything!",
+        badgeContent: "Completed"
+    },
+    {
+        id: "7",
         title: "Weather Web",
         link: "https://github.com/NinadVyas/WeatherApp",
         logo: ww,
@@ -64,7 +92,7 @@ const projectData = [
         badgeContent: "Completed"
     },
     {
-        id: "5",
+        id: "9",
         title: "Login Ui",
         link: "https://github.com/NinadVyas/Login-Ui-React-Native",
         logo: lu,
@@ -80,11 +108,21 @@ export default function Home() {
             <div className="main-wrapper wrap-md grid  px-5  mx-auto">
                 {/* Header / Hero */}
                 <MotionBTTContainer transition={{ delay: 0.2, duration: 0.5 }}>
-                    {/* <Image
-                            src={banner}
-                            className=" rounded-md bg-neutral-100 object-cover border border-white opacity-40	"
-                            alt=""
-                         /> */}
+                <nav class="fixed bottom-0 left-1/2 transform -translate-x-1/2 w-80 sm:max-w-md z-50">
+    <div class="">
+        <a href="https://www.linkedin.com/in/ninadvyas/" target="_blank" rel="noreferrer" className="transition duration-100 transform hover:scale-110 transition-transform">
+        <Image
+                                src='https://www.svgrepo.com/show/144030/linkedin-square-logo.svg'
+                                width={100}
+                                height={100}
+                                alt="link"
+                                className='w-8'
+                            />
+        </a>
+    </div>
+</nav>
+
+
                     <SectionContainer className="hero--container flex flex-col gap-5 mt-32">
                         <div className="flex gap-8">
                             <Image
@@ -105,20 +143,14 @@ export default function Home() {
                                 </span>
                             </div>
                         </div>
-                        <div>
-                            <div className=" flex items-center gap-2 bg-neutral-900	 w-44 rounded-lg h-8">
-                                <div className='ml-3'>
+                            <div className=" flex items-center gap-2 bg-neutral-900 w-40 rounded-full h-10 p-4">
                                     <div className="h-3.5 w-3.5 rounded-full bg-emerald-600">
                                         <div className="z-[11] h-3.5 w-3.5 animate-ping rounded-full bg-emerald-600 transition-[4s]" />
                                     </div>
+                                <div className="text-white subpixel-antialiased">
+                                    Open to work
                                 </div>
-                                <a href="mailto:ninadvyas07@gmail.com"  rel="noreferrer"  target="_blank" title="Send an email to Ninad Vyas">
-                                <span size="sm" variant="muted" className="hover:underline text-white subpixel-antialiased">
-                                    Available for hire
-                                </span>
-                                </a>
                             </div>
-                        </div>
                         <div>
                             <div className=" content tracking-wide text-xl text-neutral-300 md:text-xl font-medium ">
                                 I&apos;m a software engineer based in India, with a passion for building solutions that are user-friendly,
@@ -145,43 +177,41 @@ export default function Home() {
 
                 {/* Card Containers */}
                 <MotionBTTContainer transition={{ delay: 0.4, duration: 0.5 }}>
-                    <SectionContainer className="projects--container">
+                    <SectionContainer>
 
                         <h2 className="font-bold text-4xl rounded-full text-left h-9  w-[10rem] text-white my-4 leading-8 tracking-tighter">
                             Projects
                         </h2>
                         {/* <hr /> */}
-                        <CardGroup className="grid scroll-m-24 gap-5 grid-cols-1 md:grid-cols-2 w-full mt-4 ">
+                        <CardGroup className="grid scroll-m-24 gap-5 grid-cols-2 w-full mt-4 ">
                             {projectData.map((project) => (
                                 <Card
                                     key={project.id}
-                                    className="col-span-1 bg-neutral-900  hover:bg-white"
+                                    className="col-span-1 bg-neutral-900  hover:bg-neutral-800"
                                     link={project.link}
                                     target="_blank"
                                 >
-                                    {!!project.badgeContent && (
                                         <BadgeGroup
-                                            className="mb-0 m-6"
+                                            className="mb-0 m-6 border border-neutral-600"
                                             alignment="left"
                                         >
                                             <BadgeMessage>
-                                                Completed
+                                                {project.badgeContent}
                                             </BadgeMessage>
                                         </BadgeGroup>
-                                    )}
                                     <CardBody>
                                         <CardImage
                                             src={project.logo}
                                             alt="banner"
-                                            imageClassName="absolute top-0 right-0 m-6 p-4 bg-white rounded-3xl border border-neutral-300"
+                                            imageClassName="absolute top-0 right-0 m-6 p-2 bg-white rounded-3xl border border-neutral-300"
                                             width={80}
                                             height={80}
                                         />
                                         <div className="card-content absolute bottom-8 left-6 right-6">
-                                            <CardHeader className="text-sky-500">
+                                            <CardHeader className="text-white font-bold">
                                                 {project.title}
                                             </CardHeader>
-                                            <div className="content break-words  text-3xl font-medium leading-10 tracking-tight lg:tracking-tighter text-neutral-500 ">
+                                            <div className="content break-words text-2xl font-medium leading-10 tracking-tight lg:tracking-tighter text-neutral-500 ">
                                                 <p>{project.content}</p>
                                             </div>
                                         </div>
