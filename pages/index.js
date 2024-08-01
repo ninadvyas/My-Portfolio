@@ -108,21 +108,6 @@ export default function Home() {
             <div className="main-wrapper wrap-md grid  px-5  mx-auto">
                 {/* Header / Hero */}
                 <MotionBTTContainer transition={{ delay: 0.2, duration: 0.5 }}>
-                <nav class="fixed bottom-0 left-1/2 transform -translate-x-1/2 w-80 sm:max-w-md z-50">
-    <div class="">
-        <a href="https://www.linkedin.com/in/ninadvyas/" target="_blank" rel="noreferrer" className="transition duration-100 transform hover:scale-110 transition-transform">
-        <Image
-                                src='https://www.svgrepo.com/show/144030/linkedin-square-logo.svg'
-                                width={100}
-                                height={100}
-                                alt="link"
-                                className='w-8'
-                            />
-        </a>
-    </div>
-</nav>
-
-
                     <SectionContainer className="hero--container flex flex-col gap-5 mt-32">
                         <div className="flex gap-8">
                             <Image
