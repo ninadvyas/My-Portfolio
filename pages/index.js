@@ -4,7 +4,6 @@ import { Layout } from "@components/Layout";
 // import Link from "next/link";
 import Image from "next/image";
 import cry from '../public/images/cry.png';
-import qw from '../public/images/qw.png';
 import cs from '../public/images/cs.png';
 import rr from '../public/images/rr.png';
 import ww from '../public/images/ww.png';
@@ -14,7 +13,6 @@ import snip from '../public/images/snipurl.png';
 import bookmark from '../public/images/bookmark.png';
 import better from '../public/images/better.png';
 import profilePicture from "../public/images/avatar1.jpeg";
-import { PageTitle } from "@components/Title";
 import {
     Card,
     CardBody,
@@ -24,7 +22,10 @@ import {
 } from "@components/Card";
 import { BadgeGroup, BadgeMessage } from "@components/Badge";
 import { MotionBTTContainer } from "@components/Motion";
-// import Cursor from "./Cursor";
+import { FaLinkedinIn } from "react-icons/fa6";
+import { BsTwitterX } from "react-icons/bs";
+import { FaGithub } from "react-icons/fa";
+import { IoMail } from "react-icons/io5";
 
 const projectData = [
     {
@@ -106,8 +107,7 @@ export default function Home() {
     return (
         <Layout>
             <div className="main-wrapper wrap-md grid  px-5  mx-auto">
-                {/* Header / Hero */}
-                <MotionBTTContainer transition={{ delay: 0.2, duration: 0.5 }}>
+                <MotionBTTContainer transition={{ delay: 0.2, duration: 0.5 }}>`
                     <SectionContainer className="hero--container flex flex-col gap-5 mt-32">
                         <div className="flex gap-8">
                             <Image
@@ -128,47 +128,65 @@ export default function Home() {
                                 </span>
                             </div>
                         </div>
-                            <div className=" flex items-center gap-2 bg-neutral-900 w-40 rounded-full h-10 p-4">
+                        <div className='flex gap-4'>
+                            <div className=" flex items-center gap-2 bg-neutral-900 w-40 rounded-lg h-10 p-4">
                                     <div className="h-3.5 w-3.5 rounded-full bg-emerald-600">
                                         <div className="z-[11] h-3.5 w-3.5 animate-ping rounded-full bg-emerald-600 transition-[4s]" />
                                     </div>
-                                <div className="text-white subpixel-antialiased">
+                                <div className="text-white subpixel-antialiased font-medium">
                                     Open to work
                                 </div>
                             </div>
+                            <a href='https://drive.google.com/file/d/1HHsnhcmyLMfN6CgEJkmABQTT6kqW9_ad/view?usp=sharing' rel="noreferrer" target="_blank" title="Ninad's Resume">
+                            <div className=" flex items-center gap-2 bg-neutral-900 hover:bg-neutral-800 transition-colors duration-300 w-32 rounded-lg h-10 p-4">
+                                    <div className="h-3.5 w-3.5 rounded-sm bg-blue-700 border border-white">
+                                        <div className="z-[11] h-3.5 w-3.5 rounded-sm bg-blue-700" />
+                                    </div>
+                                <div className="text-white subpixel-antialiased font-medium">
+                                    Resume
+                                </div>
+                            </div>
+                            </a>
+                        </div>
                         <div>
                             <div className=" content tracking-wide text-xl text-neutral-300 md:text-xl font-medium ">
                                 I&apos;m a software engineer based in India, with a passion for building solutions that are user-friendly,
                                 innovative and problem solving.
                             </div>
-                            <div class="buttons-container mt-6 mb-4 flex flex-wrap gap-2">
-                                {/* <a href="mailto:ninadvyas07@gmail.com" class="bg-[#363636] py-[4px] rounded-lg px-2 flex align-center flex-[0,0,auto] justify-center text-sm text-white-300 h-fit flex-row hover:bg-neutral-600 transition-colors duration-300 ">ninadvyas07@gmail.com</a> */}
-                                <a href="https://github.com/NinadVyas/" rel="noreferrer" class="bg-[#363636] py-1 rounded-lg px-1 flex align-center flex-[0,0,auto] justify-center text-sm text-white-300 h-fit flex-row hover:bg-neutral-600 transition-colors duration-300" target="_blank" title="Follow Ninad Vyas on Github">
-                                    <svg viewBox="0 0 256 256" class="w-5 h-5 inline" astro-icon="ph:github-logo-duotone"><path fill="currentColor" d="M200 112v8a48 48 0 0 1-48 48h-48a48 48 0 0 1-48-48v-8a49.3 49.3 0 0 1 8.5-27.3A52 52 0 0 1 68 40a52 52 0 0 1 43.8 24h32.4A52 52 0 0 1 188 40a52 52 0 0 1 3.5 44.7A49.3 49.3 0 0 1 200 112z" opacity=".2"></path><path fill="currentColor" d="M216 216a16 16 0 0 1-16-16v-8a32.1 32.1 0 0 0-14.8-27 55.8 55.8 0 0 0 22.8-45v-8a58 58 0 0 0-7.7-28.3 59.9 59.9 0 0 0-5.4-47.7 7.8 7.8 0 0 0-6.9-4 59.7 59.7 0 0 0-48 24h-24a59.7 59.7 0 0 0-48-24 7.8 7.8 0 0 0-6.9 4 59.9 59.9 0 0 0-5.4 47.7A58 58 0 0 0 48 112v8a55.8 55.8 0 0 0 22.8 45A32.1 32.1 0 0 0 56 192v8a16 16 0 0 1-16 16 8 8 0 0 0 0 16 32.1 32.1 0 0 0 32-32v-8a16 16 0 0 1 16-16h12v40a16 16 0 0 1-16 16 8 8 0 0 0 0 16 32.1 32.1 0 0 0 32-32v-40h24v40a32.1 32.1 0 0 0 32 32 8 8 0 0 0 0-16 16 16 0 0 1-16-16v-40h12a16 16 0 0 1 16 16v8a32.1 32.1 0 0 0 32 32 8 8 0 0 0 0-16zM64 120v-8a42.7 42.7 0 0 1 6.9-22.5 7.9 7.9 0 0 0 1.1-7.7 43.7 43.7 0 0 1 .8-33.5 43.6 43.6 0 0 1 32.3 20 8 8 0 0 0 6.7 3.7h32.4a8 8 0 0 0 6.7-3.7 43.6 43.6 0 0 1 32.3-20 43.7 43.7 0 0 1 .8 33.5 8.2 8.2 0 0 0 1.1 7.7A42.7 42.7 0 0 1 192 112v8a40 40 0 0 1-40 40h-48a40 40 0 0 1-40-40z"></path></svg>
-                                </a><a href="https://www.linkedin.com/in/ninadvyas/" rel="noreferrer" class="bg-[#363636] py-1 rounded-lg px-1 flex align-center flex-[0,0,auto] justify-center text-sm text-white-300 h-fit flex-row hover:bg-neutral-600 transition-colors duration-300" target="_blank" title="Follow Ninad Vyas on LinkedIn">
-                                    <svg viewBox="0 0 256 256" class="w-5 h-5 inline" astro-icon="ph:linkedin-logo-duotone"><path fill="currentColor" d="M220 44v168a8 8 0 0 1-8 8H44a8 8 0 0 1-8-8V44a8 8 0 0 1 8-8h168a8 8 0 0 1 8 8z" opacity=".2"></path><path fill="currentColor" d="M96 112v64a8 8 0 0 1-16 0v-64a8 8 0 0 1 16 0zm-8-44a12 12 0 1 0 12 12 12 12 0 0 0-12-12zm140-24v168a16 16 0 0 1-16 16H44a16 16 0 0 1-16-16V44a16 16 0 0 1 16-16h168a16 16 0 0 1 16 16zm-16 168V44H44v168zm-64-108a36 36 0 0 0-20.2 6.2A8 8 0 0 0 112 112v64a8 8 0 0 0 16 0v-36a20 20 0 0 1 40 0v36a8 8 0 0 0 16 0v-36a36 36 0 0 0-36-36z"></path></svg>
-                                </a><a href="mailto:ninadvyas07@gmail.com" rel="noreferrer" class="bg-[#363636] py-1 rounded-lg px-1 flex align-center flex-[0,0,auto] justify-center text-sm text-white-300 h-fit flex-row hover:bg-neutral-600 transition-colors duration-300" target="_blank" title="Send an email to Ninad Vyas">
-                                    <svg viewBox="0 0 24 24" class="w-5 h-5 inline" astro-icon="mdi:email"><path fill="currentColor" d="m20 8-8 5-8-5V6l8 5 8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"></path></svg>
-                                </a><a href="https://twitter.com/ninadvsd/" rel="noreferrer" class="bg-[#363636] py-1 rounded-lg px-1 flex align-center flex-[0,0,auto] justify-center text-sm text-white-300 h-fit flex-row hover:bg-neutral-600 transition-colors duration-300" target="_blank" title="Follow Ninad Vyas on Twitter">
-                                    <svg viewBox="0 0 256 256" class="w-5 h-5 inline" astro-icon="ph:twitter-logo-duotone"><path fill="currentColor" d="m240 72-32.3 32.3A127.9 127.9 0 0 1 80 224c-32 0-40-12-40-12s32-12 48-36c0 0-64-32-48-120 0 0 40 40 88 48V88c0-22 18.5-40.3 40.5-40a40 40 0 0 1 36.2 24z" opacity=".2"></path><path fill="currentColor" d="M247.4 68.9A8 8 0 0 0 240 64h-30.4a48.2 48.2 0 0 0-41-24A48.3 48.3 0 0 0 120 88v6.1C79.3 83.5 46 50.7 45.7 50.3a8 8 0 0 0-8.1-1.9 8.1 8.1 0 0 0-5.5 6.2c-8.7 48.2 5.8 80.5 19.5 99.1a108.6 108.6 0 0 0 24.7 24.4c-15.3 17.3-38.9 26.3-39.1 26.4a8 8 0 0 0-3.9 11.9c.8 1.2 3.8 5.1 11.1 8.8 9.1 4.5 21.1 6.8 35.6 6.8 70.5 0 129.5-54.3 135.5-124.2l30.2-30.1a8.4 8.4 0 0 0 1.7-8.8zm-45.3 29.7a7.8 7.8 0 0 0-2.3 5.2C195.7 166.7 143.1 216 80 216c-10.6 0-18-1.4-23.2-3.1 11.5-6.2 27.5-17 37.9-32.5a8 8 0 0 0 1-6.4 8.1 8.1 0 0 0-4.1-5.1c-.1-.1-14.9-7.8-27.6-25.3-14.4-19.8-20.5-43.9-18.1-71.7 15.8 13 46 34.2 80.8 40a8.1 8.1 0 0 0 6.5-1.8 8.2 8.2 0 0 0 2.8-6.1V88a32 32 0 0 1 61.3-12.8 8.1 8.1 0 0 0 7.4 4.8h16z"></path></svg>
+                            <div className="buttons-container mt-6 mb-4 flex flex-wrap gap-2">
+                                <a href="https://www.linkedin.com/in/ninadvyas/" rel="noreferrer" className="border border-neutral-700 py-1 rounded-lg px-1 flex align-center flex-[0,0,auto] justify-center text-sm text-white-300 h-fit flex-row hover:border-neutral-300 transition-colors duration-300" target="_blank" title="Follow Ninad Vyas on LinkedIn">
+                                    <FaLinkedinIn className='w-5 h-5'/>
                                 </a>
-                                <a href="https://dev.to/ninadvyas" rel="noreferrer" target="_blank" class="bg-[#363636] py-[4px] rounded-lg px-2 flex align-center flex-[0,0,auto] justify-center text-sm text-white-300 h-fit flex-row hover:bg-neutral-600 transition-colors  duration-300">Dev.to</a>
-                                <a href="https://www.chess.com/member/ninadvsd" rel="noreferrer" target="_blank" class="bg-[#363636] py-[4px] rounded-lg px-2 flex align-center flex-[0,0,auto] justify-center text-sm text-white-300 h-fit flex-row hover:bg-neutral-600  transition-colors duration-300">Chess.com</a>
-                                <a href="https://framesbyme.netlify.app" rel="noreferrer" target="_blank" class="bg-[#363636] py-[4px] rounded-lg px-2 flex align-center flex-[0,0,auto] justify-center text-sm text-white-300 h-fit flex-row hover:bg-neutral-600 transition-colors   duration-300" >Photography</a>
+                                <a href="https://github.com/NinadVyas/" rel="noreferrer" className="py-1 border border-neutral-700 rounded-lg px-1 flex align-center flex-[0,0,auto] justify-center text-sm text-white-300 h-fit flex-row hover:border-neutral-300 transition-colors duration-300" target="_blank" title="Follow Ninad Vyas on Github">
+                                    <FaGithub className='w-5 h-5'/>
+                                </a>
+                                <a href="https://twitter.com/ninadvsd/" rel="noreferrer" className="border border-neutral-700 py-1 rounded-lg px-1 flex align-center flex-[0,0,auto] justify-center text-sm text-white-300 h-fit flex-row hover:border-neutral-300 transition-colors duration-300" target="_blank" title="Follow Ninad Vyas on Twitter">
+                                    <Image src="https://img.icons8.com/material-outlined/24/FFFFFF/twitterx--v2.png" alt="twitterx--v1" width='20' height='20'/>
+                                </a>
+                                <a href="mailto:ninadvyas07@gmail.com" rel="noreferrer" className="border border-neutral-700 py-1 rounded-lg px-1 flex align-center flex-[0,0,auto] justify-center text-sm text-white-300 h-fit flex-row hover:border-neutral-300 transition-colors duration-300" target="_blank" title="Send an email to Ninad Vyas">
+                                    <IoMail className='w-5 h-5'/>
+                                </a>
+                                <a href="https://www.chess.com/member/ninadvsd" rel="noreferrer" target="_blank" className="border border-neutral-700 py-1 rounded-lg px-2 flex align-center flex-[0,0,auto] justify-center text-sm text-white-300 h-fit flex-row hover:border-neutral-300  transition-colors duration-300">
+                                    <Image src="https://img.icons8.com/glyph-neue/64/FFFFFF/knight.png" alt="chess" width='20' height='20'/>
+                                </a>
+                                <a href="https://ninadphotography.netlify.app" rel="noreferrer" target="_blank" className="border border-neutral-700 py-1 rounded-lg px-2 flex align-center flex-[0,0,auto] justify-center text-sm text-white-300 h-fit flex-row hover:border-neutral-300 transition-colors   duration-300" >
+                                    <Image src="https://img.icons8.com/ios-filled/50/FFFFFF/camera--v3.png" alt="camera" width='20' height='20'/>
+                                </a>
+                                <a href="https://dev.to/ninadvyas" rel="noreferrer" target="_blank" className="font-semibold border border-neutral-700 py-[4px] rounded-lg px-2 flex align-center flex-[0,0,auto] justify-center text-sm text-white-300 h-fit flex-row hover:border-neutral-300 transition-colors  duration-300">
+                                Blog
+                                </a>
                             </div>
                         </div>
                     </SectionContainer>
                 </MotionBTTContainer>
 
-                {/* Card Containers */}
-                <MotionBTTContainer transition={{ delay: 0.4, duration: 0.5 }}>
-                    <SectionContainer>
+                <MotionBTTContainer transition={{ delay: 0.4, duration: 0.5 }}> 
+                    <SectionContainer className="projects--container">
 
                         <h2 className="font-bold text-4xl rounded-full text-left h-9  w-[10rem] text-white my-4 leading-8 tracking-tighter">
                             Projects
                         </h2>
-                        {/* <hr /> */}
-                        <CardGroup className="grid scroll-m-24 gap-5 grid-cols-2 w-full mt-4 ">
+                        <CardGroup className="grid scroll-m-24 gap-5 grid-cols-1 md:grid-cols-2 w-full mt-4 ">
                             {projectData.map((project) => (
                                 <Card
                                     key={project.id}
@@ -188,7 +206,7 @@ export default function Home() {
                                         <CardImage
                                             src={project.logo}
                                             alt="banner"
-                                            imageClassName="absolute top-0 right-0 m-6 p-2 bg-white rounded-3xl border border-neutral-300"
+                                            imageClassName="absolute top-0 right-0 m-6 p-2 bg-white rounded-3xl border border-neutral-700"
                                             width={80}
                                             height={80}
                                         />
@@ -206,7 +224,6 @@ export default function Home() {
                         </CardGroup>
                     </SectionContainer>
                 </MotionBTTContainer>
-                {/* Blog Container */}
             </div>
 
         </Layout>

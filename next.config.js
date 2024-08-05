@@ -13,17 +13,8 @@ const nextConfig = {
         includePaths: [path.join(__dirname, "styles")]
     },
     images: {
-        formats: ["image/avif", "image/webp"]
-    },
-    env: {
-        siteTitle: "Lane - Avenue Labs",
-        siteDescription:
-            "Lane - A personal portfolio landing template for developers and designers. Made by Avenue Labs.",
-        siteKeywords:
-            "Personal portfolio, landing page, page template, developer portfoliom designer portfolio",
-        siteUrl: "https://lane.avenuelabs.co",
-        siteImagePreviewUrl: "images/lane.png",
-        twitterHandle: "@your_handle"
+        formats: ["image/avif", "image/webp"],
+        domains: ['images.unsplash.com','brighterion.com', 'www.smartdatacollective.com','img.icons8.com' ],
     },
     headers() {
         return [
