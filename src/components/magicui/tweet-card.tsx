@@ -112,6 +112,7 @@ export const TweetHeader = ({ tweet }: { tweet: EnrichedTweet }) => (
           alt={tweet.user.screen_name}
           height={48}
           width={48}
+          alt='tweet'
           src={tweet.user.profile_image_url_https}
           className="overflow-hidden rounded-full border border-transparent"
         />
@@ -219,6 +220,7 @@ export const TweetMedia = ({ tweet }: { tweet: EnrichedTweet }) => (
         <Image
             width='10'
             height='10'
+            alt='tweet'
           // @ts-ignore
           src={tweet.card.binding_values.thumbnail_image_large.image_value.url}
           className="h-64 rounded-xl border object-cover shadow-sm"
