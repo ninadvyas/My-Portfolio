@@ -5,6 +5,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
+import Image from "next/image";
 import Markdown from "react-markdown";
 import AnimatedShinyText from "@/components/magicui/animated-shiny-text";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
@@ -142,7 +143,9 @@ export default function Page() {
       <div className="columns-2 gap-4 sm:columns-2">
         {images.map((imageUrl, idx) => (
           <BlurFade key={imageUrl} delay={0.25 + idx * 0.05} inView>
-            <img
+            <Image
+              width='500'
+              height='500'
               className="mb-4 size-full rounded-lg object-contain"
               src={imageUrl}
               alt={`Random stock image ${idx + 1}`}

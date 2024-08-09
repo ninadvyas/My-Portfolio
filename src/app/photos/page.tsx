@@ -1,6 +1,6 @@
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
-import Link from "next/link";
+import Image from "next/image";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -29,7 +29,9 @@ export default function Page() {
       <div className="columns-2 gap-4 sm:columns-2">
         {images.map((imageUrl, idx) => (
           <BlurFade key={imageUrl} delay={0.25 + idx * 0.05} inView>
-            <img
+          <Image
+              width='500'
+              height='500'
               className="mb-4 size-full rounded-lg object-contain"
               src={imageUrl}
               alt={`Random stock image ${idx + 1}`}
